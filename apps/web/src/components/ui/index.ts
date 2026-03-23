@@ -1,3 +1,12 @@
 export { Button } from './button';
 export { Card, CardHeader, CardTitle, CardContent } from './card';
 export { Badge } from './badge';
+export { Input } from './input';
+export { Textarea } from './textarea';
+export { Select } from './select';
+export { Dialog, DialogHeader, DialogTitle, DialogContent, DialogFooter } from './dialog';
+export { Avatar, AvatarGroup } from './avatar';
+export { Tabs } from './tabs';
+export { Progress } from './progress';
+export { Spinner } from './spinner';
+export { DropdownMenu, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuLabel } from './dropdown-menu';

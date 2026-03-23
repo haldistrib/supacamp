@@ -142,6 +142,113 @@
       "pendingModeration": "Under Review",
       "original": "Original",
       "transformed": "AI Transformed"
+    },
+    "nav": {
+      "dashboard": "Dashboard",
+      "team": "Team",
+      "challenges": "Challenges",
+      "videos": "Videos",
+      "leaderboard": "Leaderboard",
+      "settings": "Settings"
+    },
+    "settings": {
+      "title": "Settings",
+      "displayName": "Display Name",
+      "avatar": "Avatar",
+      "locale": "Language",
+      "parentalControls": "Parental Controls",
+      "parentPin": "Parent PIN",
+      "saveSuccess": "Settings saved successfully",
+      "currentAvatar": "Current Avatar"
+    },
+    "leaderboard": {
+      "title": "Leaderboard",
+      "global": "Global",
+      "regional": "Regional",
+      "weekly": "Weekly",
+      "monthly": "Monthly",
+      "rank": "Rank",
+      "team": "Team",
+      "points": "Points",
+      "challengesWon": "Challenges Won"
+    },
+    "teamCreate": {
+      "title": "Create a Team",
+      "teamName": "Team Name",
+      "teamNamePlaceholder": "Enter your team name",
+      "selectAvatar": "Select Team Avatar",
+      "create": "Create Team"
+    },
+    "teamDetail": {
+      "stats": "Team Stats",
+      "challengeHistory": "Challenge History",
+      "noHistory": "No challenges completed yet."
+    }
+  },
+  "admin": {
+    "nav": {
+      "dashboard": "Dashboard",
+      "challenges": "Challenges",
+      "moderation": "Moderation",
+      "users": "Users",
+      "analytics": "Analytics"
+    },
+    "dashboard": {
+      "title": "Admin Dashboard",
+      "totalUsers": "Total Users",
+      "totalTeams": "Total Teams",
+      "totalChallenges": "Total Challenges",
+      "pendingModeration": "Pending Moderation"
+    },
+    "challenges": {
+      "title": "Manage Challenges",
+      "createNew": "Create Challenge",
+      "status": "Status",
+      "approve": "Approve",
+      "reject": "Reject"
+    },
+    "challengeForm": {
+      "title": "New Challenge",
+      "challengeTitle": "Title",
+      "description": "Description",
+      "instructions": "Instructions",
+      "safetyNotes": "Safety Notes",
+      "category": "Category",
+      "difficulty": "Difficulty",
+      "pointsReward": "Points Reward",
+      "estimatedDuration": "Estimated Duration",
+      "minPlayers": "Min Players",
+      "maxPlayers": "Max Players",
+      "indoor": "Indoor",
+      "outdoor": "Outdoor",
+      "create": "Create Challenge"
+    },
+    "moderation": {
+      "title": "Content Moderation",
+      "queue": "Moderation Queue",
+      "approve": "Approve",
+      "reject": "Reject",
+      "flag": "Flag",
+      "noItems": "No items pending moderation."
+    },
+    "users": {
+      "title": "User Management",
+      "name": "Name",
+      "email": "Email",
+      "status": "Status",
+      "joined": "Joined",
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "analytics": {
+      "title": "Analytics",
+      "pageViews": "Page Views",
+      "signups": "Signups",
+      "challengesCompleted": "Challenges Completed",
+      "period": "Period",
+      "last7Days": "Last 7 Days",
+      "last30Days": "Last 30 Days",
+      "allTime": "All Time"
     }
   },
   "common": {
@@ -200,9 +307,44 @@
     "forgotPassword": "Forgot Password?",
     "noAccount": "Don't have an account?",
     "hasAccount": "Already have an account?",
+    "signInButton": "Sign In",
+    "signUpButton": "Create Account",
+    "signingIn": "Signing in...",
+    "creatingAccount": "Creating account...",
     "parentVerification": "Parent Verification Required",
     "parentVerificationDesc": "We've sent an email to your parent. They need to verify and give consent before you can start.",
-    "chooseAvatar": "Choose Your Avatar"
+    "chooseAvatar": "Choose Your Avatar",
+    "ageCheck": "How old are you?",
+    "ageCheckDescription": "We need to know your age to keep you safe. This is required by law.",
+    "tooYoung": "Sorry, you must be at least 6 years old to join Supacamp.",
+    "parentRequired": "Since you're under 13, we need a parent or guardian to help set up your account.",
+    "parentEmailDescription": "Enter your parent or guardian's email address. We'll send them a message to approve your account.",
+    "parentConsentTitle": "Parent/Guardian Consent",
+    "parentConsentDescription": "A parent or guardian must agree to the following to create this account.",
+    "parentConsentDataCollection": "I consent to the collection of my child's display name, avatar selection, and challenge participation data.",
+    "parentConsentSafety": "I understand Supacamp uses content moderation and safety features to protect my child.",
+    "parentConsentTerms": "I have read and agree to the Terms of Service and Privacy Policy.",
+    "profileSetup": "Set Up Your Profile",
+    "profileSetupDescription": "Choose a display name and avatar. Don't use your real name!",
+    "displayNamePlaceholder": "CoolExplorer42",
+    "displayNameHint": "Pick a fun name! Don't use your real name.",
+    "step": "Step {current} of {total}",
+    "forgotPasswordTitle": "Reset Your Password",
+    "forgotPasswordDescription": "Enter your email address and we'll send you a link to reset your password.",
+    "sendResetLink": "Send Reset Link",
+    "sendingResetLink": "Sending...",
+    "resetLinkSent": "Check your email! We've sent you a link to reset your password.",
+    "resetPasswordTitle": "Choose a New Password",
+    "resetPasswordDescription": "Enter your new password below.",
+    "resetPassword": "Reset Password",
+    "resettingPassword": "Resetting...",
+    "resetPasswordSuccess": "Your password has been reset! You can now sign in.",
+    "passwordMinLength": "Password must be at least 8 characters",
+    "passwordsMustMatch": "Passwords must match",
+    "invalidEmail": "Please enter a valid email address",
+    "requiredField": "This field is required",
+    "unexpectedError": "An unexpected error occurred. Please try again.",
+    "backToSignIn": "Back to Sign In"
   },
   "metadata": {
     "siteName": "Supacamp",

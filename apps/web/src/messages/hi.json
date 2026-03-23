@@ -1,216 +1,44 @@
 {
   "marketing": {
-    "hero": {
-      "title": "Turn Real Adventures Into Epic Videos",
-      "subtitle": "Form teams. Complete challenges. Let AI make it legendary.",
-      "cta": "Start Your Team",
-      "secondaryCta": "See How It Works"
-    },
-    "socialProof": {
-      "teamsCreated": "{count} teams created",
-      "challengesCompleted": "{count} challenges completed",
-      "videosTransformed": "{count} videos transformed"
-    },
+    "hero": { "title": "असली रोमांच को शानदार वीडियो में बदलें", "subtitle": "टीम बनाओ। चैलेंज पूरा करो। AI इसे लीजेंडरी बना देगा।", "cta": "अपनी टीम बनाओ", "secondaryCta": "कैसे काम करता है देखें" },
+    "socialProof": { "teamsCreated": "{count} टीमें बनाई गईं", "challengesCompleted": "{count} चैलेंज पूरे हुए", "videosTransformed": "{count} वीडियो बदले गए" },
     "features": {
-      "aiVideo": {
-        "title": "AI-Powered Video Magic",
-        "slug": "ai-video-transformation",
-        "description": "Record your challenge. Our AI transforms it into a cinematic masterpiece.",
-        "metaTitle": "AI Video Transformation for Kids | Supacamp",
-        "metaDescription": "Watch how AI transforms your real-world challenge videos into stunning, stylized clips. Safe, fun, and creative."
-      },
-      "teams": {
-        "title": "Build Your Dream Team",
-        "slug": "create-your-team",
-        "description": "Invite your friends, form a squad, and take on challenges together.",
-        "metaTitle": "Create Your Team | Supacamp",
-        "metaDescription": "Form your team, invite friends, and compete together in fun outdoor challenges. Team up and rise on the leaderboard!"
-      },
-      "challenges": {
-        "title": "Epic Challenges Await",
-        "slug": "challenges",
-        "description": "From athletic feats to creative quests — there's a challenge for every team.",
-        "metaTitle": "Fun Challenges for Kids | Supacamp",
-        "metaDescription": "Explore exciting outdoor challenges designed for kids. Athletic, creative, exploration, and teamwork challenges await your team."
-      },
-      "leaderboard": {
-        "title": "Climb the Leaderboard",
-        "slug": "leaderboard",
-        "description": "Compete globally, regionally, or weekly. Every challenge counts.",
-        "metaTitle": "Global Leaderboard | Supacamp",
-        "metaDescription": "See how your team ranks against others worldwide. Compete in weekly, monthly, and global leaderboards."
-      },
-      "safety": {
-        "title": "Safety First, Always",
-        "slug": "child-safety",
-        "description": "Built from the ground up with child safety as the #1 priority.",
-        "metaTitle": "Child Safety & Privacy | Supacamp",
-        "metaDescription": "Learn how Supacamp protects your child with COPPA compliance, content moderation, and privacy-first design."
-      },
-      "videoGallery": {
-        "title": "Video Gallery",
-        "slug": "video-gallery",
-        "description": "Watch the most amazing AI-transformed challenge videos from teams worldwide.",
-        "metaTitle": "Video Gallery | Supacamp",
-        "metaDescription": "Browse incredible AI-transformed videos from teams around the world. See what happens when real adventures meet AI magic."
-      },
-      "teamVsTeam": {
-        "title": "Team vs Team",
-        "slug": "team-vs-team",
-        "description": "Challenge rival teams head-to-head and prove who's the best.",
-        "metaTitle": "Team vs Team Challenges | Supacamp",
-        "metaDescription": "Challenge other teams to head-to-head competitions. Complete the same challenge and let the community vote for the winner!"
-      },
-      "parentalControls": {
-        "title": "Parental Controls",
-        "slug": "parental-controls",
-        "description": "Full visibility and control for parents. Because trust is earned.",
-        "metaTitle": "Parental Controls | Supacamp",
-        "metaDescription": "Supacamp gives parents complete control over their child's experience with PIN protection, consent management, and activity monitoring."
-      },
-      "rewards": {
-        "title": "Rewards & Badges",
-        "slug": "rewards",
-        "description": "Earn sticker badges, unlock achievements, and show off your team's accomplishments.",
-        "metaTitle": "Rewards & Badges | Supacamp",
-        "metaDescription": "Earn fun sticker badges and rewards as your team completes challenges. Collect them all and show off your achievements!"
-      }
+      "aiVideo": { "title": "AI वीडियो मैजिक", "slug": "ai-video-badlav", "description": "अपना चैलेंज रिकॉर्ड करो। हमारा AI इसे सिनेमैटिक मास्टरपीस में बदल देगा।", "metaTitle": "बच्चों के लिए AI वीडियो ट्रांसफॉर्मेशन | Supacamp", "metaDescription": "देखें कैसे AI चैलेंज वीडियो को शानदार स्टाइलिश क्लिप में बदलता है।" },
+      "teams": { "title": "अपनी ड्रीम टीम बनाओ", "slug": "apni-team-banao", "description": "दोस्तों को बुलाओ, टीम बनाओ, और साथ मिलकर चैलेंज करो।", "metaTitle": "अपनी टीम बनाओ | Supacamp", "metaDescription": "टीम बनाओ, दोस्तों को बुलाओ और आउटडोर चैलेंज में मिलकर मुकाबला करो!" },
+      "challenges": { "title": "शानदार चैलेंज इंतजार कर रहे हैं", "slug": "challenge", "description": "एथलेटिक से लेकर क्रिएटिव क्वेस्ट तक — हर टीम के लिए चैलेंज है।", "metaTitle": "बच्चों के लिए मज़ेदार चैलेंज | Supacamp", "metaDescription": "बच्चों के लिए डिज़ाइन किए गए रोमांचक आउटडोर चैलेंज खोजें।" },
+      "leaderboard": { "title": "लीडरबोर्ड पर चढ़ो", "slug": "leaderboard", "description": "ग्लोबल, रीजनल या वीकली में मुकाबला करो। हर चैलेंज मायने रखता है।", "metaTitle": "ग्लोबल लीडरबोर्ड | Supacamp", "metaDescription": "देखो तुम्हारी टीम दुनिया भर में कहां रैंक करती है।" },
+      "safety": { "title": "सुरक्षा सबसे पहले, हमेशा", "slug": "bachche-ki-suraksha", "description": "बच्चों की सुरक्षा को नंबर 1 प्राथमिकता के साथ शुरू से बनाया गया।", "metaTitle": "बच्चों की सुरक्षा और गोपनीयता | Supacamp", "metaDescription": "जानें कैसे Supacamp COPPA अनुपालन और कंटेंट मॉडरेशन से आपके बच्चे की रक्षा करता है।" },
+      "videoGallery": { "title": "वीडियो गैलरी", "slug": "video-gallery", "description": "दुनिया भर की टीमों के सबसे शानदार AI-ट्रांसफॉर्म्ड चैलेंज वीडियो देखें।", "metaTitle": "वीडियो गैलरी | Supacamp", "metaDescription": "दुनिया भर की टीमों के AI ट्रांसफॉर्म्ड वीडियो देखें।" },
+      "teamVsTeam": { "title": "टीम बनाम टीम", "slug": "team-banam-team", "description": "प्रतिद्वंद्वी टीमों को सीधे मुकाबले की चुनौती दो।", "metaTitle": "टीम बनाम टीम चैलेंज | Supacamp", "metaDescription": "दूसरी टीमों को सीधे मुकाबले की चुनौती दो!" },
+      "parentalControls": { "title": "पैरेंटल कंट्रोल", "slug": "parental-control", "description": "माता-पिता के लिए पूर्ण दृश्यता और नियंत्रण। क्योंकि भरोसा कमाया जाता है।", "metaTitle": "पैरेंटल कंट्रोल | Supacamp", "metaDescription": "Supacamp माता-पिता को बच्चों के अनुभव पर पूर्ण नियंत्रण देता है।" },
+      "rewards": { "title": "पुरस्कार और बैज", "slug": "puraskaar", "description": "स्टिकर बैज कमाओ, उपलब्धियां अनलॉक करो, और टीम की सफलता दिखाओ।", "metaTitle": "पुरस्कार और बैज | Supacamp", "metaDescription": "चैलेंज पूरा करके मज़ेदार बैज और पुरस्कार कमाओ।" }
     },
-    "howItWorks": {
-      "title": "How It Works",
-      "step1": { "title": "Form Your Team", "description": "Create a team and invite your friends with a simple code." },
-      "step2": { "title": "Pick a Challenge", "description": "Choose from dozens of fun, safe, admin-approved challenges." },
-      "step3": { "title": "Record & Transform", "description": "Film yourselves completing the challenge. AI makes it look incredible." }
-    },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "items": {
-        "whatIs": { "question": "What is Supacamp?", "answer": "Supacamp is a platform where kids form teams, complete real-world challenges, and use AI to transform their videos into stunning clips. It's designed to get kids active, creative, and having fun outdoors." },
-        "isSafe": { "question": "Is Supacamp safe for my child?", "answer": "Absolutely. Child safety is our #1 priority. We're COPPA compliant, require parental consent, have no direct messaging, no public profiles, and every video goes through AI content moderation before anyone sees it." },
-        "howAiWorks": { "question": "How does the AI video transformation work?", "answer": "After your team records a challenge video, our AI (powered by cutting-edge technology) transforms it into a stylized, cinematic clip — think comic book action, watercolor dreams, or paper craft animations. The original is always kept private." },
-        "cost": { "question": "Is Supacamp free?", "answer": "Supacamp offers a free tier with access to challenges and basic video transformations. Premium features may be available in the future." },
-        "age": { "question": "What ages is Supacamp for?", "answer": "Supacamp is designed for kids aged 6-17. Children under 13 require verified parental consent to create an account." }
-      }
-    },
-    "cta": {
-      "title": "Ready to Start Your Adventure?",
-      "subtitle": "Create your team today and turn the real world into your playground.",
-      "button": "Get Started Free"
-    }
+    "howItWorks": { "title": "कैसे काम करता है", "step1": { "title": "टीम बनाओ", "description": "एक टीम बनाओ और सिंपल कोड से दोस्तों को बुलाओ।" }, "step2": { "title": "चैलेंज चुनो", "description": "दर्जनों मज़ेदार, सुरक्षित चैलेंज में से चुनो।" }, "step3": { "title": "रिकॉर्ड करो और बदलो", "description": "चैलेंज पूरा करते हुए शूट करो। AI इसे अमेजिंग बना देगा।" } },
+    "faq": { "title": "अक्सर पूछे जाने वाले सवाल", "items": { "whatIs": { "question": "Supacamp क्या है?", "answer": "एक प्लेटफॉर्म जहां बच्चे टीम बनाते हैं, असली चैलेंज पूरा करते हैं, और AI से वीडियो को शानदार क्लिप में बदलते हैं।" }, "isSafe": { "question": "क्या यह मेरे बच्चे के लिए सुरक्षित है?", "answer": "बिल्कुल। COPPA अनुपालन, पैरेंटल कंसेंट ज़रूरी, कोई डायरेक्ट मैसेजिंग नहीं, कोई पब्लिक प्रोफाइल नहीं, और हर वीडियो AI मॉडरेशन से गुज़रता है।" }, "howAiWorks": { "question": "AI वीडियो ट्रांसफॉर्मेशन कैसे काम करता है?", "answer": "AI वीडियो को स्टाइलिश क्लिप में बदलता है — कॉमिक बुक, वॉटरकलर, या पेपर क्राफ्ट स्टाइल।" }, "cost": { "question": "क्या यह मुफ्त है?", "answer": "Supacamp बेसिक चैलेंज और वीडियो ट्रांसफॉर्मेशन के साथ फ्री प्लान देता है।" }, "age": { "question": "किस उम्र के लिए है?", "answer": "6-17 साल के बच्चों के लिए। 13 से कम उम्र के बच्चों को वेरिफाइड पैरेंटल कंसेंट चाहिए।" } } },
+    "cta": { "title": "अपना रोमांच शुरू करने के लिए तैयार?", "subtitle": "आज ही अपनी टीम बनाओ और असली दुनिया को अपना खेल का मैदान बनाओ।", "button": "मुफ्त में शुरू करो" }
   },
   "app": {
-    "dashboard": {
-      "welcome": "Welcome back, {name}!",
-      "yourTeam": "Your Team",
-      "activeChallenges": "Active Challenges",
-      "recentVideos": "Recent Videos",
-      "teamRank": "Team Rank",
-      "noTeam": "You haven't joined a team yet.",
-      "createTeam": "Create a Team",
-      "joinTeam": "Join a Team"
-    },
-    "team": {
-      "members": "Members",
-      "inviteCode": "Invite Code",
-      "copyCode": "Copy Code",
-      "codeCopied": "Code copied!",
-      "points": "Points",
-      "challengesCompleted": "Challenges Completed",
-      "rank": "Rank",
-      "captain": "Captain",
-      "member": "Member",
-      "leaveTeam": "Leave Team",
-      "settings": "Team Settings"
-    },
-    "challenges": {
-      "available": "Available Challenges",
-      "inProgress": "In Progress",
-      "completed": "Completed",
-      "difficulty": "Difficulty",
-      "points": "{points} points",
-      "duration": "Est. {duration}",
-      "players": "{min}-{max} players",
-      "startChallenge": "Start Challenge",
-      "safetyFirst": "Safety First",
-      "viewDetails": "View Details"
-    },
-    "videos": {
-      "myVideos": "My Videos",
-      "processing": "Processing...",
-      "ready": "Ready",
-      "failed": "Processing Failed",
-      "pendingModeration": "Under Review",
-      "original": "Original",
-      "transformed": "AI Transformed"
-    }
+    "dashboard": { "welcome": "वापसी पर स्वागत, {name}!", "yourTeam": "तुम्हारी टीम", "activeChallenges": "सक्रिय चैलेंज", "recentVideos": "हाल के वीडियो", "teamRank": "टीम रैंक", "noTeam": "तुम अभी किसी टीम में नहीं हो।", "createTeam": "टीम बनाओ", "joinTeam": "टीम में शामिल हो" },
+    "team": { "members": "सदस्य", "inviteCode": "इनवाइट कोड", "copyCode": "कोड कॉपी करो", "codeCopied": "कॉपी हो गया!", "points": "पॉइंट्स", "challengesCompleted": "पूरे किए चैलेंज", "rank": "रैंक", "captain": "कप्तान", "member": "सदस्य", "leaveTeam": "टीम छोड़ो", "settings": "टीम सेटिंग्स" },
+    "challenges": { "available": "उपलब्ध चैलेंज", "inProgress": "जारी", "completed": "पूरे हुए", "difficulty": "कठिनाई", "points": "{points} पॉइंट्स", "duration": "अनुमानित {duration}", "players": "{min}-{max} खिलाड़ी", "startChallenge": "चैलेंज शुरू करो", "safetyFirst": "सुरक्षा पहले", "viewDetails": "विवरण देखें" },
+    "videos": { "myVideos": "मेरे वीडियो", "processing": "प्रोसेस हो रहा है...", "ready": "तैयार", "failed": "प्रोसेसिंग विफल", "pendingModeration": "समीक्षा में", "original": "ओरिजिनल", "transformed": "AI ट्रांसफॉर्म्ड" },
+    "nav": { "dashboard": "डैशबोर्ड", "team": "टीम", "challenges": "चैलेंज", "videos": "वीडियो", "leaderboard": "लीडरबोर्ड", "settings": "सेटिंग्स" },
+    "settings": { "title": "सेटिंग्स", "displayName": "डिस्प्ले नाम", "avatar": "अवतार", "locale": "भाषा", "parentalControls": "पैरेंटल कंट्रोल", "parentPin": "पैरेंट PIN", "saveSuccess": "सेटिंग्स सेव हो गईं", "currentAvatar": "वर्तमान अवतार" },
+    "leaderboard": { "title": "लीडरबोर्ड", "global": "वैश्विक", "regional": "क्षेत्रीय", "weekly": "साप्ताहिक", "monthly": "मासिक", "rank": "रैंक", "team": "टीम", "points": "पॉइंट्स", "challengesWon": "जीते चैलेंज" },
+    "teamCreate": { "title": "टीम बनाओ", "teamName": "टीम का नाम", "teamNamePlaceholder": "टीम का नाम दर्ज करो", "selectAvatar": "टीम अवतार चुनो", "create": "टीम बनाओ" },
+    "teamDetail": { "stats": "टीम आंकड़े", "challengeHistory": "चैलेंज इतिहास", "noHistory": "अभी तक कोई चैलेंज पूरा नहीं हुआ।" }
   },
-  "common": {
-    "loading": "Loading...",
-    "error": "Something went wrong",
-    "retry": "Try Again",
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "back": "Back",
-    "next": "Next",
-    "submit": "Submit",
-    "search": "Search",
-    "noResults": "No results found",
-    "signIn": "Sign In",
-    "signUp": "Sign Up",
-    "signOut": "Sign Out",
-    "learnMore": "Learn More",
-    "readMore": "Read More",
-    "viewAll": "View All",
-    "home": "Home",
-    "features": "Features",
-    "blog": "Blog",
-    "about": "About",
-    "contact": "Contact",
-    "privacy": "Privacy",
-    "terms": "Terms",
-    "language": "Language"
+  "admin": {
+    "nav": { "dashboard": "डैशबोर्ड", "challenges": "चैलेंज", "moderation": "मॉडरेशन", "users": "उपयोगकर्ता", "analytics": "एनालिटिक्स" },
+    "dashboard": { "title": "एडमिन डैशबोर्ड", "totalUsers": "कुल उपयोगकर्ता", "totalTeams": "कुल टीमें", "totalChallenges": "कुल चैलेंज", "pendingModeration": "लंबित मॉडरेशन" },
+    "challenges": { "title": "चैलेंज प्रबंधन", "createNew": "चैलेंज बनाओ", "status": "स्थिति", "approve": "स्वीकृत", "reject": "अस्वीकृत" },
+    "challengeForm": { "title": "नया चैलेंज", "challengeTitle": "शीर्षक", "description": "विवरण", "instructions": "निर्देश", "safetyNotes": "सुरक्षा नोट्स", "category": "श्रेणी", "difficulty": "कठिनाई", "pointsReward": "पॉइंट रिवॉर्ड", "estimatedDuration": "अनुमानित अवधि", "minPlayers": "न्यूनतम खिलाड़ी", "maxPlayers": "अधिकतम खिलाड़ी", "indoor": "इनडोर", "outdoor": "आउटडोर", "create": "चैलेंज बनाओ" },
+    "moderation": { "title": "कंटेंट मॉडरेशन", "queue": "मॉडरेशन कतार", "approve": "स्वीकृत", "reject": "अस्वीकृत", "flag": "फ्लैग", "noItems": "कोई लंबित आइटम नहीं।" },
+    "users": { "title": "उपयोगकर्ता प्रबंधन", "name": "नाम", "email": "ईमेल", "status": "स्थिति", "joined": "जुड़े", "active": "सक्रिय", "inactive": "निष्क्रिय" },
+    "analytics": { "title": "एनालिटिक्स", "pageViews": "पेज व्यू", "signups": "साइनअप", "challengesCompleted": "पूरे चैलेंज", "period": "अवधि", "last7Days": "पिछले 7 दिन", "last30Days": "पिछले 30 दिन", "allTime": "सब समय" }
   },
-  "blog": {
-    "title": "Blog",
-    "readMore": "Read More",
-    "readingTime": "{minutes} min read",
-    "publishedOn": "Published on {date}",
-    "categories": {
-      "outdoorActivities": "Outdoor Activities",
-      "aiCreativity": "AI & Creativity",
-      "teamBuilding": "Team Building",
-      "parentingTips": "Parenting Tips",
-      "childSafety": "Online Safety"
-    },
-    "relatedPosts": "Related Posts",
-    "tableOfContents": "Table of Contents"
-  },
-  "auth": {
-    "signInTitle": "Welcome Back",
-    "signUpTitle": "Join the Adventure",
-    "email": "Email",
-    "password": "Password",
-    "confirmPassword": "Confirm Password",
-    "displayName": "Choose Your Display Name",
-    "dateOfBirth": "Date of Birth",
-    "parentEmail": "Parent's Email",
-    "parentConsent": "I am the parent/guardian and I consent to my child using Supacamp",
-    "forgotPassword": "Forgot Password?",
-    "noAccount": "Don't have an account?",
-    "hasAccount": "Already have an account?",
-    "parentVerification": "Parent Verification Required",
-    "parentVerificationDesc": "We've sent an email to your parent. They need to verify and give consent before you can start.",
-    "chooseAvatar": "Choose Your Avatar"
-  },
-  "metadata": {
-    "siteName": "Supacamp",
-    "homeTitle": "Supacamp — Turn Real Adventures Into Epic Videos",
-    "homeDescription": "Form teams, complete real-world challenges, and let AI transform your videos into stunning clips. The outdoor adventure platform for kids.",
-    "blogTitle": "Supacamp Blog — Tips, Challenges & Outdoor Fun",
-    "blogDescription": "Discover outdoor activity ideas, team-building tips, AI creativity insights, and parenting advice on the Supacamp blog.",
-    "aboutTitle": "About Supacamp — Our Mission to Get Kids Outside",
-    "aboutDescription": "Learn about Supacamp's mission to get kids active, creative, and off screens by making real-world adventures more exciting than video games."
-  }
+  "common": { "loading": "लोड हो रहा है...", "error": "कुछ गलत हो गया", "retry": "फिर से कोशिश करो", "save": "सेव", "cancel": "रद्द", "delete": "हटाओ", "edit": "संपादित करो", "back": "वापस", "next": "अगला", "submit": "सबमिट", "search": "खोजो", "noResults": "कोई परिणाम नहीं", "signIn": "साइन इन", "signUp": "साइन अप", "signOut": "साइन आउट", "learnMore": "और जानो", "readMore": "और पढ़ो", "viewAll": "सभी देखो", "home": "होम", "features": "फीचर्स", "blog": "ब्लॉग", "about": "हमारे बारे में", "contact": "संपर्क", "privacy": "गोपनीयता", "terms": "शर्तें", "language": "भाषा" },
+  "blog": { "title": "ब्लॉग", "readMore": "और पढ़ो", "readingTime": "{minutes} मिनट पढ़ने का समय", "publishedOn": "{date} को प्रकाशित", "categories": { "outdoorActivities": "आउटडोर गतिविधियां", "aiCreativity": "AI और रचनात्मकता", "teamBuilding": "टीम बिल्डिंग", "parentingTips": "पैरेंटिंग टिप्स", "childSafety": "ऑनलाइन सुरक्षा" }, "relatedPosts": "संबंधित पोस्ट", "tableOfContents": "विषय सूची" },
+  "auth": { "signInTitle": "वापसी पर स्वागत", "signUpTitle": "रोमांच में शामिल हो", "email": "ईमेल", "password": "पासवर्ड", "confirmPassword": "पासवर्ड कन्फर्म करो", "displayName": "अपना डिस्प्ले नाम चुनो", "dateOfBirth": "जन्म तिथि", "parentEmail": "माता-पिता का ईमेल", "parentConsent": "मैं माता-पिता/अभिभावक हूं और बच्चे के Supacamp उपयोग की अनुमति देता/देती हूं", "forgotPassword": "पासवर्ड भूल गए?", "noAccount": "अकाउंट नहीं है?", "hasAccount": "पहले से अकाउंट है?", "signInButton": "साइन इन", "signUpButton": "अकाउंट बनाओ", "signingIn": "साइन इन हो रहा है...", "creatingAccount": "अकाउंट बन रहा है...", "parentVerification": "पैरेंट वेरिफिकेशन ज़रूरी", "parentVerificationDesc": "हमने माता-पिता को ईमेल भेजा है। उन्हें वेरिफाई और अनुमति देनी होगी।", "chooseAvatar": "अपना अवतार चुनो", "ageCheck": "तुम्हारी उम्र कितनी है?", "ageCheckDescription": "तुम्हें सुरक्षित रखने के लिए हमें तुम्हारी उम्र जानना ज़रूरी है।", "tooYoung": "शामिल होने के लिए कम से कम 6 साल के होने चाहिए।", "parentRequired": "13 से कम उम्र होने पर माता-पिता की ज़रूरत है।", "parentEmailDescription": "अपने माता-पिता का ईमेल दर्ज करो।", "parentConsentTitle": "पैरेंटल कंसेंट", "parentConsentDescription": "माता-पिता को निम्नलिखित से सहमत होना चाहिए।", "parentConsentDataCollection": "मैं अपने बच्चे के डेटा संग्रह की अनुमति देता/देती हूं।", "parentConsentSafety": "मैं समझता/समझती हूं कि Supacamp कंटेंट मॉडरेशन का उपयोग करता है।", "parentConsentTerms": "मैंने शर्तें और गोपनीयता नीति पढ़ी और स्वीकार की।", "profileSetup": "प्रोफाइल सेटअप", "profileSetupDescription": "नाम और अवतार चुनो। असली नाम मत लिखो!", "displayNamePlaceholder": "कूलएक्सप्लोरर42", "displayNameHint": "मज़ेदार नाम चुनो! असली नाम नहीं।", "step": "चरण {current}/{total}", "forgotPasswordTitle": "पासवर्ड रीसेट", "forgotPasswordDescription": "अपना ईमेल दर्ज करो।", "sendResetLink": "लिंक भेजो", "sendingResetLink": "भेज रहे हैं...", "resetLinkSent": "ईमेल चेक करो!", "resetPasswordTitle": "नया पासवर्ड", "resetPasswordDescription": "नया पासवर्ड दर्ज करो।", "resetPassword": "रीसेट", "resettingPassword": "रीसेट हो रहा है...", "resetPasswordSuccess": "पासवर्ड रीसेट हो गया!", "passwordMinLength": "कम से कम 8 कैरेक्टर", "passwordsMustMatch": "पासवर्ड मेल खाने चाहिए", "invalidEmail": "सही ईमेल दर्ज करो", "requiredField": "ज़रूरी फील्ड", "unexpectedError": "अनपेक्षित त्रुटि। फिर से कोशिश करो।", "backToSignIn": "साइन इन पर वापस जाओ" },
+  "metadata": { "siteName": "Supacamp", "homeTitle": "Supacamp — असली रोमांच को शानदार वीडियो में बदलें", "homeDescription": "टीम बनाओ, असली चैलेंज पूरा करो, और AI से वीडियो बदलो। बच्चों का आउटडोर एडवेंचर प्लेटफॉर्म।", "blogTitle": "Supacamp ब्लॉग — टिप्स, चैलेंज और आउटडोर मज़ा", "blogDescription": "आउटडोर गतिविधियां, टीम बिल्डिंग, AI रचनात्मकता और पैरेंटिंग टिप्स।", "aboutTitle": "Supacamp के बारे में — हमारा मिशन", "aboutDescription": "बच्चों को सक्रिय और रचनात्मक बनाने का Supacamp का मिशन।" }
 }

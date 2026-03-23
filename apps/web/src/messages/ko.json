@@ -1,216 +1,44 @@
 {
   "marketing": {
-    "hero": {
-      "title": "Turn Real Adventures Into Epic Videos",
-      "subtitle": "Form teams. Complete challenges. Let AI make it legendary.",
-      "cta": "Start Your Team",
-      "secondaryCta": "See How It Works"
-    },
-    "socialProof": {
-      "teamsCreated": "{count} teams created",
-      "challengesCompleted": "{count} challenges completed",
-      "videosTransformed": "{count} videos transformed"
-    },
+    "hero": { "title": "진짜 모험을 에픽 영상으로 바꿔보세요", "subtitle": "팀을 만들고. 챌린지를 완료하고. AI가 전설로 만들어줍니다.", "cta": "팀 만들기", "secondaryCta": "작동 방식 보기" },
+    "socialProof": { "teamsCreated": "{count}개 팀 생성", "challengesCompleted": "{count}개 챌린지 완료", "videosTransformed": "{count}개 영상 변환" },
     "features": {
-      "aiVideo": {
-        "title": "AI-Powered Video Magic",
-        "slug": "ai-video-transformation",
-        "description": "Record your challenge. Our AI transforms it into a cinematic masterpiece.",
-        "metaTitle": "AI Video Transformation for Kids | Supacamp",
-        "metaDescription": "Watch how AI transforms your real-world challenge videos into stunning, stylized clips. Safe, fun, and creative."
-      },
-      "teams": {
-        "title": "Build Your Dream Team",
-        "slug": "create-your-team",
-        "description": "Invite your friends, form a squad, and take on challenges together.",
-        "metaTitle": "Create Your Team | Supacamp",
-        "metaDescription": "Form your team, invite friends, and compete together in fun outdoor challenges. Team up and rise on the leaderboard!"
-      },
-      "challenges": {
-        "title": "Epic Challenges Await",
-        "slug": "challenges",
-        "description": "From athletic feats to creative quests — there's a challenge for every team.",
-        "metaTitle": "Fun Challenges for Kids | Supacamp",
-        "metaDescription": "Explore exciting outdoor challenges designed for kids. Athletic, creative, exploration, and teamwork challenges await your team."
-      },
-      "leaderboard": {
-        "title": "Climb the Leaderboard",
-        "slug": "leaderboard",
-        "description": "Compete globally, regionally, or weekly. Every challenge counts.",
-        "metaTitle": "Global Leaderboard | Supacamp",
-        "metaDescription": "See how your team ranks against others worldwide. Compete in weekly, monthly, and global leaderboards."
-      },
-      "safety": {
-        "title": "Safety First, Always",
-        "slug": "child-safety",
-        "description": "Built from the ground up with child safety as the #1 priority.",
-        "metaTitle": "Child Safety & Privacy | Supacamp",
-        "metaDescription": "Learn how Supacamp protects your child with COPPA compliance, content moderation, and privacy-first design."
-      },
-      "videoGallery": {
-        "title": "Video Gallery",
-        "slug": "video-gallery",
-        "description": "Watch the most amazing AI-transformed challenge videos from teams worldwide.",
-        "metaTitle": "Video Gallery | Supacamp",
-        "metaDescription": "Browse incredible AI-transformed videos from teams around the world. See what happens when real adventures meet AI magic."
-      },
-      "teamVsTeam": {
-        "title": "Team vs Team",
-        "slug": "team-vs-team",
-        "description": "Challenge rival teams head-to-head and prove who's the best.",
-        "metaTitle": "Team vs Team Challenges | Supacamp",
-        "metaDescription": "Challenge other teams to head-to-head competitions. Complete the same challenge and let the community vote for the winner!"
-      },
-      "parentalControls": {
-        "title": "Parental Controls",
-        "slug": "parental-controls",
-        "description": "Full visibility and control for parents. Because trust is earned.",
-        "metaTitle": "Parental Controls | Supacamp",
-        "metaDescription": "Supacamp gives parents complete control over their child's experience with PIN protection, consent management, and activity monitoring."
-      },
-      "rewards": {
-        "title": "Rewards & Badges",
-        "slug": "rewards",
-        "description": "Earn sticker badges, unlock achievements, and show off your team's accomplishments.",
-        "metaTitle": "Rewards & Badges | Supacamp",
-        "metaDescription": "Earn fun sticker badges and rewards as your team completes challenges. Collect them all and show off your achievements!"
-      }
+      "aiVideo": { "title": "AI 영상 마법", "slug": "ai-yeongsang-byeonhwan", "description": "챌린지를 촬영하세요. AI가 영화 같은 걸작으로 변환합니다.", "metaTitle": "어린이를 위한 AI 영상 변환 | Supacamp", "metaDescription": "AI가 챌린지 영상을 멋진 스타일 클립으로 변환하는 모습을 확인하세요." },
+      "teams": { "title": "드림팀을 만들어보세요", "slug": "tim-mandeulgi", "description": "친구를 초대하고 스쿼드를 결성해 함께 챌린지에 도전하세요.", "metaTitle": "팀 만들기 | Supacamp", "metaDescription": "팀을 만들고 친구를 초대해 야외 챌린지에서 함께 경쟁하세요!" },
+      "challenges": { "title": "에픽 챌린지가 기다려요", "slug": "chaellinji", "description": "운동부터 창작까지 — 모든 팀을 위한 챌린지가 있습니다.", "metaTitle": "어린이 재미 챌린지 | Supacamp", "metaDescription": "어린이를 위한 흥미진진한 야외 챌린지를 탐색하세요." },
+      "leaderboard": { "title": "랭킹을 올려보세요", "slug": "raengking", "description": "글로벌, 지역, 주간으로 경쟁하세요. 모든 챌린지가 카운트됩니다.", "metaTitle": "글로벌 랭킹 | Supacamp", "metaDescription": "전 세계 팀과 랭킹을 경쟁하세요." },
+      "safety": { "title": "안전이 최우선", "slug": "eorin-i-anjon", "description": "아동 안전을 최우선으로 처음부터 설계되었습니다.", "metaTitle": "아동 안전 & 개인정보보호 | Supacamp", "metaDescription": "Supacamp가 COPPA 준수와 콘텐츠 모더레이션으로 자녀를 보호하는 방법." },
+      "videoGallery": { "title": "비디오 갤러리", "slug": "bideo-gaelleori", "description": "전 세계 팀의 AI 변환 챌린지 영상을 감상하세요.", "metaTitle": "비디오 갤러리 | Supacamp", "metaDescription": "전 세계 팀의 AI 변환 영상을 둘러보세요." },
+      "teamVsTeam": { "title": "팀 대 팀", "slug": "tim-dae-tim", "description": "라이벌 팀에게 직접 대결을 신청하고 최강을 증명하세요.", "metaTitle": "팀 대 팀 챌린지 | Supacamp", "metaDescription": "다른 팀에게 직접 대결을 신청하세요!" },
+      "parentalControls": { "title": "보호자 관리", "slug": "bohoja-gwanri", "description": "부모를 위한 완전한 가시성과 제어. 신뢰는 쌓는 것이니까.", "metaTitle": "보호자 관리 | Supacamp", "metaDescription": "Supacamp는 부모에게 자녀 경험의 완전한 제어를 제공합니다." },
+      "rewards": { "title": "보상 & 배지", "slug": "bosang", "description": "스티커 배지를 모으고 업적을 해제하며 팀 성과를 뽐내세요.", "metaTitle": "보상 & 배지 | Supacamp", "metaDescription": "챌린지 완료 시 재미있는 배지와 보상을 받으세요." }
     },
-    "howItWorks": {
-      "title": "How It Works",
-      "step1": { "title": "Form Your Team", "description": "Create a team and invite your friends with a simple code." },
-      "step2": { "title": "Pick a Challenge", "description": "Choose from dozens of fun, safe, admin-approved challenges." },
-      "step3": { "title": "Record & Transform", "description": "Film yourselves completing the challenge. AI makes it look incredible." }
-    },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "items": {
-        "whatIs": { "question": "What is Supacamp?", "answer": "Supacamp is a platform where kids form teams, complete real-world challenges, and use AI to transform their videos into stunning clips. It's designed to get kids active, creative, and having fun outdoors." },
-        "isSafe": { "question": "Is Supacamp safe for my child?", "answer": "Absolutely. Child safety is our #1 priority. We're COPPA compliant, require parental consent, have no direct messaging, no public profiles, and every video goes through AI content moderation before anyone sees it." },
-        "howAiWorks": { "question": "How does the AI video transformation work?", "answer": "After your team records a challenge video, our AI (powered by cutting-edge technology) transforms it into a stylized, cinematic clip — think comic book action, watercolor dreams, or paper craft animations. The original is always kept private." },
-        "cost": { "question": "Is Supacamp free?", "answer": "Supacamp offers a free tier with access to challenges and basic video transformations. Premium features may be available in the future." },
-        "age": { "question": "What ages is Supacamp for?", "answer": "Supacamp is designed for kids aged 6-17. Children under 13 require verified parental consent to create an account." }
-      }
-    },
-    "cta": {
-      "title": "Ready to Start Your Adventure?",
-      "subtitle": "Create your team today and turn the real world into your playground.",
-      "button": "Get Started Free"
-    }
+    "howItWorks": { "title": "작동 방식", "step1": { "title": "팀 만들기", "description": "팀을 만들고 간단한 코드로 친구를 초대하세요." }, "step2": { "title": "챌린지 선택", "description": "재미있고 안전한 승인된 챌린지 중에서 선택하세요." }, "step3": { "title": "촬영 & 변환", "description": "챌린지를 촬영하세요. AI가 멋지게 만들어줍니다." } },
+    "faq": { "title": "자주 묻는 질문", "items": { "whatIs": { "question": "Supacamp가 뭔가요?", "answer": "아이들이 팀을 만들고, 실제 챌린지를 완료하고, AI로 영상을 멋진 클립으로 변환하는 플랫폼입니다." }, "isSafe": { "question": "아이에게 안전한가요?", "answer": "네. COPPA 준수, 부모 동의 필수, DM 없음, 공개 프로필 없음, 모든 영상 AI 모더레이션." }, "howAiWorks": { "question": "AI 영상 변환은 어떻게 작동하나요?", "answer": "AI가 영상을 스타일리시한 클립으로 변환합니다 — 만화풍, 수채화풍, 종이접기풍 등." }, "cost": { "question": "무료인가요?", "answer": "기본 챌린지와 영상 변환에 접근할 수 있는 무료 요금제가 있습니다." }, "age": { "question": "대상 연령은?", "answer": "6~17세 어린이용입니다. 13세 미만은 부모 동의가 필요합니다." } } },
+    "cta": { "title": "모험을 시작할 준비가 됐나요?", "subtitle": "오늘 팀을 만들고 현실 세계를 놀이터로 바꾸세요.", "button": "무료로 시작" }
   },
   "app": {
-    "dashboard": {
-      "welcome": "Welcome back, {name}!",
-      "yourTeam": "Your Team",
-      "activeChallenges": "Active Challenges",
-      "recentVideos": "Recent Videos",
-      "teamRank": "Team Rank",
-      "noTeam": "You haven't joined a team yet.",
-      "createTeam": "Create a Team",
-      "joinTeam": "Join a Team"
-    },
-    "team": {
-      "members": "Members",
-      "inviteCode": "Invite Code",
-      "copyCode": "Copy Code",
-      "codeCopied": "Code copied!",
-      "points": "Points",
-      "challengesCompleted": "Challenges Completed",
-      "rank": "Rank",
-      "captain": "Captain",
-      "member": "Member",
-      "leaveTeam": "Leave Team",
-      "settings": "Team Settings"
-    },
-    "challenges": {
-      "available": "Available Challenges",
-      "inProgress": "In Progress",
-      "completed": "Completed",
-      "difficulty": "Difficulty",
-      "points": "{points} points",
-      "duration": "Est. {duration}",
-      "players": "{min}-{max} players",
-      "startChallenge": "Start Challenge",
-      "safetyFirst": "Safety First",
-      "viewDetails": "View Details"
-    },
-    "videos": {
-      "myVideos": "My Videos",
-      "processing": "Processing...",
-      "ready": "Ready",
-      "failed": "Processing Failed",
-      "pendingModeration": "Under Review",
-      "original": "Original",
-      "transformed": "AI Transformed"
-    }
+    "dashboard": { "welcome": "돌아왔군요, {name}!", "yourTeam": "내 팀", "activeChallenges": "활성 챌린지", "recentVideos": "최근 영상", "teamRank": "팀 순위", "noTeam": "아직 팀에 가입하지 않았습니다.", "createTeam": "팀 만들기", "joinTeam": "팀 가입" },
+    "team": { "members": "멤버", "inviteCode": "초대 코드", "copyCode": "코드 복사", "codeCopied": "복사됨!", "points": "포인트", "challengesCompleted": "완료된 챌린지", "rank": "순위", "captain": "캡틴", "member": "멤버", "leaveTeam": "팀 탈퇴", "settings": "팀 설정" },
+    "challenges": { "available": "가능한 챌린지", "inProgress": "진행 중", "completed": "완료", "difficulty": "난이도", "points": "{points}포인트", "duration": "약 {duration}", "players": "{min}~{max}명", "startChallenge": "챌린지 시작", "safetyFirst": "안전 제일", "viewDetails": "상세 보기" },
+    "videos": { "myVideos": "내 영상", "processing": "처리 중...", "ready": "완료", "failed": "처리 실패", "pendingModeration": "심사 중", "original": "원본", "transformed": "AI 변환" },
+    "nav": { "dashboard": "대시보드", "team": "팀", "challenges": "챌린지", "videos": "영상", "leaderboard": "랭킹", "settings": "설정" },
+    "settings": { "title": "설정", "displayName": "표시 이름", "avatar": "아바타", "locale": "언어", "parentalControls": "보호자 관리", "parentPin": "보호자 PIN", "saveSuccess": "설정 저장됨", "currentAvatar": "현재 아바타" },
+    "leaderboard": { "title": "랭킹", "global": "글로벌", "regional": "지역", "weekly": "주간", "monthly": "월간", "rank": "순위", "team": "팀", "points": "포인트", "challengesWon": "승리한 챌린지" },
+    "teamCreate": { "title": "팀 만들기", "teamName": "팀 이름", "teamNamePlaceholder": "팀 이름을 입력하세요", "selectAvatar": "팀 아바타 선택", "create": "팀 만들기" },
+    "teamDetail": { "stats": "팀 통계", "challengeHistory": "챌린지 기록", "noHistory": "아직 완료된 챌린지가 없습니다." }
   },
-  "common": {
-    "loading": "Loading...",
-    "error": "Something went wrong",
-    "retry": "Try Again",
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "back": "Back",
-    "next": "Next",
-    "submit": "Submit",
-    "search": "Search",
-    "noResults": "No results found",
-    "signIn": "Sign In",
-    "signUp": "Sign Up",
-    "signOut": "Sign Out",
-    "learnMore": "Learn More",
-    "readMore": "Read More",
-    "viewAll": "View All",
-    "home": "Home",
-    "features": "Features",
-    "blog": "Blog",
-    "about": "About",
-    "contact": "Contact",
-    "privacy": "Privacy",
-    "terms": "Terms",
-    "language": "Language"
+  "admin": {
+    "nav": { "dashboard": "대시보드", "challenges": "챌린지", "moderation": "모더레이션", "users": "사용자", "analytics": "분석" },
+    "dashboard": { "title": "관리자 대시보드", "totalUsers": "총 사용자", "totalTeams": "총 팀", "totalChallenges": "총 챌린지", "pendingModeration": "대기 중 모더레이션" },
+    "challenges": { "title": "챌린지 관리", "createNew": "챌린지 생성", "status": "상태", "approve": "승인", "reject": "거부" },
+    "challengeForm": { "title": "새 챌린지", "challengeTitle": "제목", "description": "설명", "instructions": "지침", "safetyNotes": "안전 주의사항", "category": "카테고리", "difficulty": "난이도", "pointsReward": "포인트 보상", "estimatedDuration": "예상 시간", "minPlayers": "최소 인원", "maxPlayers": "최대 인원", "indoor": "실내", "outdoor": "야외", "create": "챌린지 생성" },
+    "moderation": { "title": "콘텐츠 모더레이션", "queue": "모더레이션 대기열", "approve": "승인", "reject": "거부", "flag": "플래그", "noItems": "대기 중인 항목이 없습니다." },
+    "users": { "title": "사용자 관리", "name": "이름", "email": "이메일", "status": "상태", "joined": "가입일", "active": "활성", "inactive": "비활성" },
+    "analytics": { "title": "분석", "pageViews": "페이지 조회", "signups": "가입", "challengesCompleted": "완료 챌린지", "period": "기간", "last7Days": "최근 7일", "last30Days": "최근 30일", "allTime": "전체" }
   },
-  "blog": {
-    "title": "Blog",
-    "readMore": "Read More",
-    "readingTime": "{minutes} min read",
-    "publishedOn": "Published on {date}",
-    "categories": {
-      "outdoorActivities": "Outdoor Activities",
-      "aiCreativity": "AI & Creativity",
-      "teamBuilding": "Team Building",
-      "parentingTips": "Parenting Tips",
-      "childSafety": "Online Safety"
-    },
-    "relatedPosts": "Related Posts",
-    "tableOfContents": "Table of Contents"
-  },
-  "auth": {
-    "signInTitle": "Welcome Back",
-    "signUpTitle": "Join the Adventure",
-    "email": "Email",
-    "password": "Password",
-    "confirmPassword": "Confirm Password",
-    "displayName": "Choose Your Display Name",
-    "dateOfBirth": "Date of Birth",
-    "parentEmail": "Parent's Email",
-    "parentConsent": "I am the parent/guardian and I consent to my child using Supacamp",
-    "forgotPassword": "Forgot Password?",
-    "noAccount": "Don't have an account?",
-    "hasAccount": "Already have an account?",
-    "parentVerification": "Parent Verification Required",
-    "parentVerificationDesc": "We've sent an email to your parent. They need to verify and give consent before you can start.",
-    "chooseAvatar": "Choose Your Avatar"
-  },
-  "metadata": {
-    "siteName": "Supacamp",
-    "homeTitle": "Supacamp — Turn Real Adventures Into Epic Videos",
-    "homeDescription": "Form teams, complete real-world challenges, and let AI transform your videos into stunning clips. The outdoor adventure platform for kids.",
-    "blogTitle": "Supacamp Blog — Tips, Challenges & Outdoor Fun",
-    "blogDescription": "Discover outdoor activity ideas, team-building tips, AI creativity insights, and parenting advice on the Supacamp blog.",
-    "aboutTitle": "About Supacamp — Our Mission to Get Kids Outside",
-    "aboutDescription": "Learn about Supacamp's mission to get kids active, creative, and off screens by making real-world adventures more exciting than video games."
-  }
+  "common": { "loading": "로딩 중...", "error": "문제가 발생했습니다", "retry": "다시 시도", "save": "저장", "cancel": "취소", "delete": "삭제", "edit": "편집", "back": "뒤로", "next": "다음", "submit": "제출", "search": "검색", "noResults": "결과 없음", "signIn": "로그인", "signUp": "가입", "signOut": "로그아웃", "learnMore": "더 알아보기", "readMore": "더 읽기", "viewAll": "전체 보기", "home": "홈", "features": "기능", "blog": "블로그", "about": "소개", "contact": "문의", "privacy": "개인정보", "terms": "이용약관", "language": "언어" },
+  "blog": { "title": "블로그", "readMore": "더 읽기", "readingTime": "{minutes}분 읽기", "publishedOn": "{date} 게시", "categories": { "outdoorActivities": "야외 활동", "aiCreativity": "AI & 창의성", "teamBuilding": "팀빌딩", "parentingTips": "육아 팁", "childSafety": "온라인 안전" }, "relatedPosts": "관련 게시물", "tableOfContents": "목차" },
+  "auth": { "signInTitle": "다시 만나서 반가워요", "signUpTitle": "모험에 참여하세요", "email": "이메일", "password": "비밀번호", "confirmPassword": "비밀번호 확인", "displayName": "표시 이름 선택", "dateOfBirth": "생년월일", "parentEmail": "부모님 이메일", "parentConsent": "저는 부모/보호자이며 자녀의 Supacamp 사용에 동의합니다", "forgotPassword": "비밀번호를 잊으셨나요?", "noAccount": "계정이 없으신가요?", "hasAccount": "이미 계정이 있으신가요?", "signInButton": "로그인", "signUpButton": "계정 만들기", "signingIn": "로그인 중...", "creatingAccount": "계정 생성 중...", "parentVerification": "보호자 확인 필요", "parentVerificationDesc": "부모님에게 이메일을 보냈습니다. 확인과 동의가 필요합니다.", "chooseAvatar": "아바타 선택", "ageCheck": "몇 살인가요?", "ageCheckDescription": "안전을 위해 나이를 확인해야 합니다.", "tooYoung": "최소 6세 이상이어야 합니다.", "parentRequired": "13세 미만이므로 부모님이 필요합니다.", "parentEmailDescription": "부모님 이메일 주소를 입력하세요.", "parentConsentTitle": "보호자 동의", "parentConsentDescription": "보호자가 다음에 동의해야 합니다.", "parentConsentDataCollection": "자녀의 데이터 수집에 동의합니다.", "parentConsentSafety": "Supacamp가 콘텐츠 모더레이션을 사용함을 이해합니다.", "parentConsentTerms": "이용약관과 개인정보보호정책에 동의합니다.", "profileSetup": "프로필 설정", "profileSetupDescription": "이름과 아바타를 선택하세요. 진짜 이름은 쓰지 마세요!", "displayNamePlaceholder": "쿨탐험가42", "displayNameHint": "재미있는 이름을 골라요! 진짜 이름은 안 돼요.", "step": "{total}단계 중 {current}단계", "forgotPasswordTitle": "비밀번호 재설정", "forgotPasswordDescription": "이메일 주소를 입력하세요.", "sendResetLink": "링크 보내기", "sendingResetLink": "보내는 중...", "resetLinkSent": "이메일을 확인하세요!", "resetPasswordTitle": "새 비밀번호", "resetPasswordDescription": "새 비밀번호를 입력하세요.", "resetPassword": "재설정", "resettingPassword": "재설정 중...", "resetPasswordSuccess": "비밀번호가 재설정되었습니다!", "passwordMinLength": "최소 8자 이상", "passwordsMustMatch": "비밀번호가 일치해야 합니다", "invalidEmail": "유효한 이메일을 입력하세요", "requiredField": "필수 입력", "unexpectedError": "예기치 않은 오류입니다. 다시 시도하세요.", "backToSignIn": "로그인으로 돌아가기" },
+  "metadata": { "siteName": "Supacamp", "homeTitle": "Supacamp — 진짜 모험을 에픽 영상으로", "homeDescription": "팀을 만들고, 실제 챌린지를 완료하고, AI로 영상을 변환하세요. 어린이 야외 모험 플랫폼.", "blogTitle": "Supacamp 블로그 — 팁, 챌린지 & 야외 재미", "blogDescription": "야외 활동, 팀빌딩, AI 창의성, 육아 팁.", "aboutTitle": "Supacamp 소개 — 우리의 미션", "aboutDescription": "아이들을 활동적이고 창의적으로 만드는 Supacamp의 미션." }
 }

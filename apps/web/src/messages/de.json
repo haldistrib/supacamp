@@ -1,216 +1,71 @@
 {
   "marketing": {
     "hero": {
-      "title": "Turn Real Adventures Into Epic Videos",
-      "subtitle": "Form teams. Complete challenges. Let AI make it legendary.",
-      "cta": "Start Your Team",
-      "secondaryCta": "See How It Works"
+      "title": "Verwandle echte Abenteuer in epische Videos",
+      "subtitle": "Bildet Teams. Meistert Herausforderungen. Lasst KI es legendär machen.",
+      "cta": "Erstelle dein Team",
+      "secondaryCta": "So funktioniert's"
     },
     "socialProof": {
-      "teamsCreated": "{count} teams created",
-      "challengesCompleted": "{count} challenges completed",
-      "videosTransformed": "{count} videos transformed"
+      "teamsCreated": "{count} Teams erstellt",
+      "challengesCompleted": "{count} Herausforderungen gemeistert",
+      "videosTransformed": "{count} Videos transformiert"
     },
     "features": {
-      "aiVideo": {
-        "title": "AI-Powered Video Magic",
-        "slug": "ai-video-transformation",
-        "description": "Record your challenge. Our AI transforms it into a cinematic masterpiece.",
-        "metaTitle": "AI Video Transformation for Kids | Supacamp",
-        "metaDescription": "Watch how AI transforms your real-world challenge videos into stunning, stylized clips. Safe, fun, and creative."
-      },
-      "teams": {
-        "title": "Build Your Dream Team",
-        "slug": "create-your-team",
-        "description": "Invite your friends, form a squad, and take on challenges together.",
-        "metaTitle": "Create Your Team | Supacamp",
-        "metaDescription": "Form your team, invite friends, and compete together in fun outdoor challenges. Team up and rise on the leaderboard!"
-      },
-      "challenges": {
-        "title": "Epic Challenges Await",
-        "slug": "challenges",
-        "description": "From athletic feats to creative quests — there's a challenge for every team.",
-        "metaTitle": "Fun Challenges for Kids | Supacamp",
-        "metaDescription": "Explore exciting outdoor challenges designed for kids. Athletic, creative, exploration, and teamwork challenges await your team."
-      },
-      "leaderboard": {
-        "title": "Climb the Leaderboard",
-        "slug": "leaderboard",
-        "description": "Compete globally, regionally, or weekly. Every challenge counts.",
-        "metaTitle": "Global Leaderboard | Supacamp",
-        "metaDescription": "See how your team ranks against others worldwide. Compete in weekly, monthly, and global leaderboards."
-      },
-      "safety": {
-        "title": "Safety First, Always",
-        "slug": "child-safety",
-        "description": "Built from the ground up with child safety as the #1 priority.",
-        "metaTitle": "Child Safety & Privacy | Supacamp",
-        "metaDescription": "Learn how Supacamp protects your child with COPPA compliance, content moderation, and privacy-first design."
-      },
-      "videoGallery": {
-        "title": "Video Gallery",
-        "slug": "video-gallery",
-        "description": "Watch the most amazing AI-transformed challenge videos from teams worldwide.",
-        "metaTitle": "Video Gallery | Supacamp",
-        "metaDescription": "Browse incredible AI-transformed videos from teams around the world. See what happens when real adventures meet AI magic."
-      },
-      "teamVsTeam": {
-        "title": "Team vs Team",
-        "slug": "team-vs-team",
-        "description": "Challenge rival teams head-to-head and prove who's the best.",
-        "metaTitle": "Team vs Team Challenges | Supacamp",
-        "metaDescription": "Challenge other teams to head-to-head competitions. Complete the same challenge and let the community vote for the winner!"
-      },
-      "parentalControls": {
-        "title": "Parental Controls",
-        "slug": "parental-controls",
-        "description": "Full visibility and control for parents. Because trust is earned.",
-        "metaTitle": "Parental Controls | Supacamp",
-        "metaDescription": "Supacamp gives parents complete control over their child's experience with PIN protection, consent management, and activity monitoring."
-      },
-      "rewards": {
-        "title": "Rewards & Badges",
-        "slug": "rewards",
-        "description": "Earn sticker badges, unlock achievements, and show off your team's accomplishments.",
-        "metaTitle": "Rewards & Badges | Supacamp",
-        "metaDescription": "Earn fun sticker badges and rewards as your team completes challenges. Collect them all and show off your achievements!"
-      }
+      "aiVideo": { "title": "KI-Video-Magie", "slug": "ki-video-transformation", "description": "Nimm deine Herausforderung auf. Unsere KI verwandelt sie in ein filmreifes Meisterwerk.", "metaTitle": "KI-Video-Transformation für Kinder | Supacamp", "metaDescription": "Erlebe, wie KI deine Challenge-Videos in atemberaubende, stilisierte Clips verwandelt. Sicher, spaßig und kreativ." },
+      "teams": { "title": "Bau dein Traumteam", "slug": "erstelle-dein-team", "description": "Lade deine Freunde ein, bilde ein Squad und meistert Herausforderungen zusammen.", "metaTitle": "Erstelle dein Team | Supacamp", "metaDescription": "Bilde dein Team, lade Freunde ein und tretet gemeinsam in Outdoor-Challenges an!" },
+      "challenges": { "title": "Epische Herausforderungen warten", "slug": "herausforderungen", "description": "Von sportlichen Leistungen bis kreativen Quests — es gibt eine Challenge für jedes Team.", "metaTitle": "Spaßige Challenges für Kinder | Supacamp", "metaDescription": "Entdecke spannende Outdoor-Challenges für Kinder. Sportlich, kreativ, Erkundung und Teamwork." },
+      "leaderboard": { "title": "Erklimme die Rangliste", "slug": "rangliste", "description": "Tritt global, regional oder wöchentlich an. Jede Challenge zählt.", "metaTitle": "Globale Rangliste | Supacamp", "metaDescription": "Sieh, wie dein Team weltweit abschneidet." },
+      "safety": { "title": "Sicherheit an erster Stelle", "slug": "kindersicherheit", "description": "Von Grund auf mit Kindersicherheit als oberster Priorität entwickelt.", "metaTitle": "Kindersicherheit & Datenschutz | Supacamp", "metaDescription": "Erfahre, wie Supacamp dein Kind mit COPPA-Konformität und Inhaltsmoderation schützt." },
+      "videoGallery": { "title": "Videogalerie", "slug": "videogalerie", "description": "Schau dir die besten KI-transformierten Challenge-Videos von Teams weltweit an.", "metaTitle": "Videogalerie | Supacamp", "metaDescription": "Durchstöbere KI-transformierte Videos von Teams aus aller Welt." },
+      "teamVsTeam": { "title": "Team gegen Team", "slug": "team-gegen-team", "description": "Fordere rivalisierende Teams heraus und beweise, wer die Besten sind.", "metaTitle": "Team gegen Team | Supacamp", "metaDescription": "Fordere andere Teams zu Kopf-an-Kopf-Wettbewerben heraus!" },
+      "parentalControls": { "title": "Elternkontrolle", "slug": "elternkontrolle", "description": "Volle Sichtbarkeit und Kontrolle für Eltern. Vertrauen wird verdient.", "metaTitle": "Elternkontrolle | Supacamp", "metaDescription": "Supacamp gibt Eltern die volle Kontrolle über das Erlebnis ihrer Kinder." },
+      "rewards": { "title": "Belohnungen & Abzeichen", "slug": "belohnungen", "description": "Verdiene Sticker-Abzeichen, schalte Erfolge frei und zeige die Leistungen deines Teams.", "metaTitle": "Belohnungen & Abzeichen | Supacamp", "metaDescription": "Verdiene Abzeichen und Belohnungen bei jeder abgeschlossenen Challenge." }
     },
     "howItWorks": {
-      "title": "How It Works",
-      "step1": { "title": "Form Your Team", "description": "Create a team and invite your friends with a simple code." },
-      "step2": { "title": "Pick a Challenge", "description": "Choose from dozens of fun, safe, admin-approved challenges." },
-      "step3": { "title": "Record & Transform", "description": "Film yourselves completing the challenge. AI makes it look incredible." }
+      "title": "So funktioniert's",
+      "step1": { "title": "Bilde dein Team", "description": "Erstelle ein Team und lade Freunde mit einem einfachen Code ein." },
+      "step2": { "title": "Wähle eine Challenge", "description": "Wähle aus dutzenden spaßigen, sicheren, genehmigten Herausforderungen." },
+      "step3": { "title": "Aufnehmen & Transformieren", "description": "Filmt euch bei der Challenge. KI macht es unglaublich." }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
+      "title": "Häufig gestellte Fragen",
       "items": {
-        "whatIs": { "question": "What is Supacamp?", "answer": "Supacamp is a platform where kids form teams, complete real-world challenges, and use AI to transform their videos into stunning clips. It's designed to get kids active, creative, and having fun outdoors." },
-        "isSafe": { "question": "Is Supacamp safe for my child?", "answer": "Absolutely. Child safety is our #1 priority. We're COPPA compliant, require parental consent, have no direct messaging, no public profiles, and every video goes through AI content moderation before anyone sees it." },
-        "howAiWorks": { "question": "How does the AI video transformation work?", "answer": "After your team records a challenge video, our AI (powered by cutting-edge technology) transforms it into a stylized, cinematic clip — think comic book action, watercolor dreams, or paper craft animations. The original is always kept private." },
-        "cost": { "question": "Is Supacamp free?", "answer": "Supacamp offers a free tier with access to challenges and basic video transformations. Premium features may be available in the future." },
-        "age": { "question": "What ages is Supacamp for?", "answer": "Supacamp is designed for kids aged 6-17. Children under 13 require verified parental consent to create an account." }
+        "whatIs": { "question": "Was ist Supacamp?", "answer": "Supacamp ist eine Plattform, auf der Kinder Teams bilden, echte Herausforderungen meistern und KI nutzen, um ihre Videos in beeindruckende Clips zu verwandeln." },
+        "isSafe": { "question": "Ist Supacamp sicher für mein Kind?", "answer": "Absolut. Kindersicherheit hat oberste Priorität. Wir sind COPPA-konform, benötigen Elternzustimmung, haben keine Direktnachrichten und jedes Video wird KI-moderiert." },
+        "howAiWorks": { "question": "Wie funktioniert die KI-Video-Transformation?", "answer": "Unsere KI verwandelt euer Video in einen stilisierten, cinematischen Clip — Comic-Action, Aquarell-Träume oder Papierbastel-Animation." },
+        "cost": { "question": "Ist Supacamp kostenlos?", "answer": "Supacamp bietet eine kostenlose Stufe mit Zugang zu Challenges und einfachen Video-Transformationen." },
+        "age": { "question": "Für welche Altersgruppe ist Supacamp?", "answer": "Supacamp ist für Kinder von 6-17 Jahren. Unter 13 ist eine verifizierte Elternzustimmung erforderlich." }
       }
     },
     "cta": {
-      "title": "Ready to Start Your Adventure?",
-      "subtitle": "Create your team today and turn the real world into your playground.",
-      "button": "Get Started Free"
+      "title": "Bereit für dein Abenteuer?",
+      "subtitle": "Erstelle heute dein Team und mach die echte Welt zu deinem Spielplatz.",
+      "button": "Kostenlos starten"
     }
   },
   "app": {
-    "dashboard": {
-      "welcome": "Welcome back, {name}!",
-      "yourTeam": "Your Team",
-      "activeChallenges": "Active Challenges",
-      "recentVideos": "Recent Videos",
-      "teamRank": "Team Rank",
-      "noTeam": "You haven't joined a team yet.",
-      "createTeam": "Create a Team",
-      "joinTeam": "Join a Team"
-    },
-    "team": {
-      "members": "Members",
-      "inviteCode": "Invite Code",
-      "copyCode": "Copy Code",
-      "codeCopied": "Code copied!",
-      "points": "Points",
-      "challengesCompleted": "Challenges Completed",
-      "rank": "Rank",
-      "captain": "Captain",
-      "member": "Member",
-      "leaveTeam": "Leave Team",
-      "settings": "Team Settings"
-    },
-    "challenges": {
-      "available": "Available Challenges",
-      "inProgress": "In Progress",
-      "completed": "Completed",
-      "difficulty": "Difficulty",
-      "points": "{points} points",
-      "duration": "Est. {duration}",
-      "players": "{min}-{max} players",
-      "startChallenge": "Start Challenge",
-      "safetyFirst": "Safety First",
-      "viewDetails": "View Details"
-    },
-    "videos": {
-      "myVideos": "My Videos",
-      "processing": "Processing...",
-      "ready": "Ready",
-      "failed": "Processing Failed",
-      "pendingModeration": "Under Review",
-      "original": "Original",
-      "transformed": "AI Transformed"
-    }
+    "dashboard": { "welcome": "Willkommen zurück, {name}!", "yourTeam": "Dein Team", "activeChallenges": "Aktive Challenges", "recentVideos": "Neueste Videos", "teamRank": "Team-Rang", "noTeam": "Du bist noch keinem Team beigetreten.", "createTeam": "Team erstellen", "joinTeam": "Team beitreten" },
+    "team": { "members": "Mitglieder", "inviteCode": "Einladungscode", "copyCode": "Code kopieren", "codeCopied": "Code kopiert!", "points": "Punkte", "challengesCompleted": "Challenges gemeistert", "rank": "Rang", "captain": "Kapitän", "member": "Mitglied", "leaveTeam": "Team verlassen", "settings": "Team-Einstellungen" },
+    "challenges": { "available": "Verfügbare Challenges", "inProgress": "In Bearbeitung", "completed": "Abgeschlossen", "difficulty": "Schwierigkeit", "points": "{points} Punkte", "duration": "Ca. {duration}", "players": "{min}-{max} Spieler", "startChallenge": "Challenge starten", "safetyFirst": "Sicherheit zuerst", "viewDetails": "Details ansehen" },
+    "videos": { "myVideos": "Meine Videos", "processing": "Wird verarbeitet...", "ready": "Fertig", "failed": "Verarbeitung fehlgeschlagen", "pendingModeration": "Wird überprüft", "original": "Original", "transformed": "KI-transformiert" },
+    "nav": { "dashboard": "Dashboard", "team": "Team", "challenges": "Challenges", "videos": "Videos", "leaderboard": "Rangliste", "settings": "Einstellungen" },
+    "settings": { "title": "Einstellungen", "displayName": "Anzeigename", "avatar": "Avatar", "locale": "Sprache", "parentalControls": "Elternkontrolle", "parentPin": "Eltern-PIN", "saveSuccess": "Einstellungen gespeichert", "currentAvatar": "Aktueller Avatar" },
+    "leaderboard": { "title": "Rangliste", "global": "Global", "regional": "Regional", "weekly": "Wöchentlich", "monthly": "Monatlich", "rank": "Rang", "team": "Team", "points": "Punkte", "challengesWon": "Gewonnene Challenges" },
+    "teamCreate": { "title": "Team erstellen", "teamName": "Teamname", "teamNamePlaceholder": "Gib deinen Teamnamen ein", "selectAvatar": "Team-Avatar wählen", "create": "Team erstellen" },
+    "teamDetail": { "stats": "Team-Statistiken", "challengeHistory": "Challenge-Verlauf", "noHistory": "Noch keine Challenges abgeschlossen." }
   },
-  "common": {
-    "loading": "Loading...",
-    "error": "Something went wrong",
-    "retry": "Try Again",
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "back": "Back",
-    "next": "Next",
-    "submit": "Submit",
-    "search": "Search",
-    "noResults": "No results found",
-    "signIn": "Sign In",
-    "signUp": "Sign Up",
-    "signOut": "Sign Out",
-    "learnMore": "Learn More",
-    "readMore": "Read More",
-    "viewAll": "View All",
-    "home": "Home",
-    "features": "Features",
-    "blog": "Blog",
-    "about": "About",
-    "contact": "Contact",
-    "privacy": "Privacy",
-    "terms": "Terms",
-    "language": "Language"
+  "admin": {
+    "nav": { "dashboard": "Dashboard", "challenges": "Challenges", "moderation": "Moderation", "users": "Benutzer", "analytics": "Analytik" },
+    "dashboard": { "title": "Admin-Dashboard", "totalUsers": "Benutzer gesamt", "totalTeams": "Teams gesamt", "totalChallenges": "Challenges gesamt", "pendingModeration": "Ausstehende Moderation" },
+    "challenges": { "title": "Challenges verwalten", "createNew": "Challenge erstellen", "status": "Status", "approve": "Genehmigen", "reject": "Ablehnen" },
+    "challengeForm": { "title": "Neue Challenge", "challengeTitle": "Titel", "description": "Beschreibung", "instructions": "Anleitung", "safetyNotes": "Sicherheitshinweise", "category": "Kategorie", "difficulty": "Schwierigkeit", "pointsReward": "Punktebelohnung", "estimatedDuration": "Geschätzte Dauer", "minPlayers": "Min. Spieler", "maxPlayers": "Max. Spieler", "indoor": "Drinnen", "outdoor": "Draußen", "create": "Challenge erstellen" },
+    "moderation": { "title": "Inhaltsmoderation", "queue": "Moderationswarteschlange", "approve": "Genehmigen", "reject": "Ablehnen", "flag": "Markieren", "noItems": "Keine ausstehenden Elemente." },
+    "users": { "title": "Benutzerverwaltung", "name": "Name", "email": "E-Mail", "status": "Status", "joined": "Beigetreten", "active": "Aktiv", "inactive": "Inaktiv" },
+    "analytics": { "title": "Analytik", "pageViews": "Seitenaufrufe", "signups": "Registrierungen", "challengesCompleted": "Challenges gemeistert", "period": "Zeitraum", "last7Days": "Letzte 7 Tage", "last30Days": "Letzte 30 Tage", "allTime": "Gesamt" }
   },
-  "blog": {
-    "title": "Blog",
-    "readMore": "Read More",
-    "readingTime": "{minutes} min read",
-    "publishedOn": "Published on {date}",
-    "categories": {
-      "outdoorActivities": "Outdoor Activities",
-      "aiCreativity": "AI & Creativity",
-      "teamBuilding": "Team Building",
-      "parentingTips": "Parenting Tips",
-      "childSafety": "Online Safety"
-    },
-    "relatedPosts": "Related Posts",
-    "tableOfContents": "Table of Contents"
-  },
-  "auth": {
-    "signInTitle": "Welcome Back",
-    "signUpTitle": "Join the Adventure",
-    "email": "Email",
-    "password": "Password",
-    "confirmPassword": "Confirm Password",
-    "displayName": "Choose Your Display Name",
-    "dateOfBirth": "Date of Birth",
-    "parentEmail": "Parent's Email",
-    "parentConsent": "I am the parent/guardian and I consent to my child using Supacamp",
-    "forgotPassword": "Forgot Password?",
-    "noAccount": "Don't have an account?",
-    "hasAccount": "Already have an account?",
-    "parentVerification": "Parent Verification Required",
-    "parentVerificationDesc": "We've sent an email to your parent. They need to verify and give consent before you can start.",
-    "chooseAvatar": "Choose Your Avatar"
-  },
-  "metadata": {
-    "siteName": "Supacamp",
-    "homeTitle": "Supacamp — Turn Real Adventures Into Epic Videos",
-    "homeDescription": "Form teams, complete real-world challenges, and let AI transform your videos into stunning clips. The outdoor adventure platform for kids.",
-    "blogTitle": "Supacamp Blog — Tips, Challenges & Outdoor Fun",
-    "blogDescription": "Discover outdoor activity ideas, team-building tips, AI creativity insights, and parenting advice on the Supacamp blog.",
-    "aboutTitle": "About Supacamp — Our Mission to Get Kids Outside",
-    "aboutDescription": "Learn about Supacamp's mission to get kids active, creative, and off screens by making real-world adventures more exciting than video games."
-  }
+  "common": { "loading": "Laden...", "error": "Etwas ist schiefgelaufen", "retry": "Erneut versuchen", "save": "Speichern", "cancel": "Abbrechen", "delete": "Löschen", "edit": "Bearbeiten", "back": "Zurück", "next": "Weiter", "submit": "Absenden", "search": "Suchen", "noResults": "Keine Ergebnisse", "signIn": "Anmelden", "signUp": "Registrieren", "signOut": "Abmelden", "learnMore": "Mehr erfahren", "readMore": "Weiterlesen", "viewAll": "Alle ansehen", "home": "Startseite", "features": "Funktionen", "blog": "Blog", "about": "Über uns", "contact": "Kontakt", "privacy": "Datenschutz", "terms": "AGB", "language": "Sprache" },
+  "blog": { "title": "Blog", "readMore": "Weiterlesen", "readingTime": "{minutes} Min. Lesezeit", "publishedOn": "Veröffentlicht am {date}", "categories": { "outdoorActivities": "Outdoor-Aktivitäten", "aiCreativity": "KI & Kreativität", "teamBuilding": "Teambuilding", "parentingTips": "Elterntipps", "childSafety": "Online-Sicherheit" }, "relatedPosts": "Ähnliche Beiträge", "tableOfContents": "Inhaltsverzeichnis" },
+  "auth": { "signInTitle": "Willkommen zurück", "signUpTitle": "Werde Teil des Abenteuers", "email": "E-Mail", "password": "Passwort", "confirmPassword": "Passwort bestätigen", "displayName": "Wähle deinen Anzeigenamen", "dateOfBirth": "Geburtsdatum", "parentEmail": "E-Mail der Eltern", "parentConsent": "Ich bin der Elternteil/Erziehungsberechtigte und stimme der Nutzung von Supacamp zu", "forgotPassword": "Passwort vergessen?", "noAccount": "Noch kein Konto?", "hasAccount": "Bereits ein Konto?", "signInButton": "Anmelden", "signUpButton": "Konto erstellen", "signingIn": "Anmeldung läuft...", "creatingAccount": "Konto wird erstellt...", "parentVerification": "Elternverifizierung erforderlich", "parentVerificationDesc": "Wir haben eine E-Mail an deine Eltern gesendet. Sie müssen zustimmen.", "chooseAvatar": "Wähle deinen Avatar", "ageCheck": "Wie alt bist du?", "ageCheckDescription": "Wir müssen dein Alter kennen, um dich zu schützen.", "tooYoung": "Du musst mindestens 6 Jahre alt sein.", "parentRequired": "Da du unter 13 bist, brauchen wir einen Elternteil.", "parentEmailDescription": "Gib die E-Mail deiner Eltern ein.", "parentConsentTitle": "Elternzustimmung", "parentConsentDescription": "Ein Elternteil muss Folgendem zustimmen.", "parentConsentDataCollection": "Ich stimme der Erfassung der Daten meines Kindes zu.", "parentConsentSafety": "Ich verstehe, dass Supacamp Inhaltsmoderation nutzt.", "parentConsentTerms": "Ich habe die AGB und Datenschutzrichtlinie gelesen.", "profileSetup": "Profil einrichten", "profileSetupDescription": "Wähle Name und Avatar. Nicht deinen echten Namen!", "displayNamePlaceholder": "CoolerEntdecker42", "displayNameHint": "Wähle einen lustigen Namen! Nicht deinen echten.", "step": "Schritt {current} von {total}", "forgotPasswordTitle": "Passwort zurücksetzen", "forgotPasswordDescription": "Gib deine E-Mail ein für den Reset-Link.", "sendResetLink": "Link senden", "sendingResetLink": "Wird gesendet...", "resetLinkSent": "Prüfe deine E-Mail!", "resetPasswordTitle": "Neues Passwort", "resetPasswordDescription": "Gib dein neues Passwort ein.", "resetPassword": "Zurücksetzen", "resettingPassword": "Wird zurückgesetzt...", "resetPasswordSuccess": "Passwort zurückgesetzt! Du kannst dich anmelden.", "passwordMinLength": "Mindestens 8 Zeichen", "passwordsMustMatch": "Passwörter müssen übereinstimmen", "invalidEmail": "Ungültige E-Mail-Adresse", "requiredField": "Pflichtfeld", "unexpectedError": "Unerwarteter Fehler. Bitte erneut versuchen.", "backToSignIn": "Zurück zur Anmeldung" },
+  "metadata": { "siteName": "Supacamp", "homeTitle": "Supacamp — Verwandle echte Abenteuer in epische Videos", "homeDescription": "Bildet Teams, meistert echte Herausforderungen und lasst KI eure Videos verwandeln. Die Outdoor-Abenteuer-Plattform für Kinder.", "blogTitle": "Supacamp Blog — Tipps, Challenges & Outdoor-Spaß", "blogDescription": "Outdoor-Ideen, Teambuilding, KI-Kreativität und Elterntipps.", "aboutTitle": "Über Supacamp — Unsere Mission", "aboutDescription": "Erfahre, wie Supacamp Kinder aktiv und kreativ nach draußen bringt." }
 }

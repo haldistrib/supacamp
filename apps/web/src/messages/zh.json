@@ -1,44 +1,784 @@
 {
   "marketing": {
-    "hero": { "title": "将真实冒险变成史诗级视频", "subtitle": "组建团队。完成挑战。让AI将其变为传奇。", "cta": "创建团队", "secondaryCta": "了解运作方式" },
-    "socialProof": { "teamsCreated": "已创建{count}个团队", "challengesCompleted": "已完成{count}个挑战", "videosTransformed": "已转换{count}个视频" },
-    "features": {
-      "aiVideo": { "title": "AI视频魔法", "slug": "ai-shipin-zhuanhua", "description": "录制你的挑战。AI将其变成电影级杰作。", "metaTitle": "儿童AI视频转换 | Supacamp", "metaDescription": "看AI如何将挑战视频变成令人惊叹的风格化短片。" },
-      "teams": { "title": "打造梦之队", "slug": "chuangjian-tuandui", "description": "邀请朋友，组建小队，一起迎接挑战。", "metaTitle": "创建团队 | Supacamp", "metaDescription": "组建团队，邀请朋友，一起在户外挑战中竞争！" },
-      "challenges": { "title": "史诗级挑战等你来", "slug": "tiaozhan", "description": "从运动到创意任务——每个团队都有适合的挑战。", "metaTitle": "儿童趣味挑战 | Supacamp", "metaDescription": "探索为孩子设计的精彩户外挑战。" },
-      "leaderboard": { "title": "攀登排行榜", "slug": "paihangbang", "description": "全球、地区或每周竞争。每个挑战都算数。", "metaTitle": "全球排行榜 | Supacamp", "metaDescription": "看看你的团队在全球排名如何。" },
-      "safety": { "title": "安全永远第一", "slug": "ertong-anquan", "description": "从零开始以儿童安全为第一优先级构建。", "metaTitle": "儿童安全与隐私 | Supacamp", "metaDescription": "了解Supacamp如何通过COPPA合规和内容审核保护您的孩子。" },
-      "videoGallery": { "title": "视频画廊", "slug": "shipin-hualang", "description": "观看全球团队最精彩的AI转换挑战视频。", "metaTitle": "视频画廊 | Supacamp", "metaDescription": "浏览全球团队的AI转换视频。" },
-      "teamVsTeam": { "title": "团队对战", "slug": "tuandui-duizhan", "description": "向对手团队发起正面挑战，证明谁才是最强。", "metaTitle": "团队对战挑战 | Supacamp", "metaDescription": "向其他团队发起正面对决！" },
-      "parentalControls": { "title": "家长控制", "slug": "jiazhang-kongzhi", "description": "为家长提供完全的可见性和控制。信任需要建立。", "metaTitle": "家长控制 | Supacamp", "metaDescription": "Supacamp为家长提供孩子体验的完全控制。" },
-      "rewards": { "title": "奖励与徽章", "slug": "jiangli", "description": "赢取贴纸徽章，解锁成就，展示团队成果。", "metaTitle": "奖励与徽章 | Supacamp", "metaDescription": "完成挑战获得有趣的徽章和奖励。" }
+    "hero": {
+      "title": "将真实冒险变成史诗级视频",
+      "subtitle": "组建团队。完成挑战。让AI将其变为传奇。",
+      "cta": "创建团队",
+      "secondaryCta": "了解运作方式"
     },
-    "howItWorks": { "title": "运作方式", "step1": { "title": "组建团队", "description": "创建团队，用简单的代码邀请朋友。" }, "step2": { "title": "选择挑战", "description": "从众多有趣安全的挑战中选择。" }, "step3": { "title": "拍摄与转换", "description": "拍摄完成挑战的过程。AI让它看起来超酷。" } },
-    "faq": { "title": "常见问题", "items": { "whatIs": { "question": "什么是Supacamp？", "answer": "一个孩子们组队、完成真实挑战、用AI将视频变成精彩短片的平台。" }, "isSafe": { "question": "对我的孩子安全吗？", "answer": "完全安全。COPPA合规，需家长同意，无私信，无公开个人资料，所有视频经AI审核。" }, "howAiWorks": { "question": "AI视频转换如何工作？", "answer": "AI将视频转换为风格化短片——漫画风、水彩风或剪纸动画风。" }, "cost": { "question": "免费吗？", "answer": "Supacamp提供免费版本，可使用基本挑战和视频转换功能。" }, "age": { "question": "适合什么年龄？", "answer": "适合6-17岁儿童。13岁以下需要家长验证同意。" } } },
-    "cta": { "title": "准备好开始冒险了吗？", "subtitle": "今天就创建团队，把现实世界变成你的游乐场。", "button": "免费开始" }
+    "socialProof": {
+      "teamsCreated": "已创建{count}个团队",
+      "challengesCompleted": "已完成{count}个挑战",
+      "videosTransformed": "已转换{count}个视频"
+    },
+    "features": {
+      "aiVideo": {
+        "title": "AI视频魔法",
+        "slug": "ai-shipin-zhuanhua",
+        "description": "录制你的挑战。AI将其变成电影级杰作。",
+        "metaTitle": "儿童AI视频转换 | Supacamp",
+        "metaDescription": "看AI如何将挑战视频变成令人惊叹的风格化短片。"
+      },
+      "teams": {
+        "title": "打造梦之队",
+        "slug": "chuangjian-tuandui",
+        "description": "邀请朋友，组建小队，一起迎接挑战。",
+        "metaTitle": "创建团队 | Supacamp",
+        "metaDescription": "组建团队，邀请朋友，一起在户外挑战中竞争！"
+      },
+      "challenges": {
+        "title": "史诗级挑战等你来",
+        "slug": "tiaozhan",
+        "description": "从运动到创意任务——每个团队都有适合的挑战。",
+        "metaTitle": "儿童趣味挑战 | Supacamp",
+        "metaDescription": "探索为孩子设计的精彩户外挑战。"
+      },
+      "leaderboard": {
+        "title": "攀登排行榜",
+        "slug": "paihangbang",
+        "description": "全球、地区或每周竞争。每个挑战都算数。",
+        "metaTitle": "全球排行榜 | Supacamp",
+        "metaDescription": "看看你的团队在全球排名如何。"
+      },
+      "safety": {
+        "title": "安全永远第一",
+        "slug": "ertong-anquan",
+        "description": "从零开始以儿童安全为第一优先级构建。",
+        "metaTitle": "儿童安全与隐私 | Supacamp",
+        "metaDescription": "了解Supacamp如何通过COPPA合规和内容审核保护您的孩子。"
+      },
+      "videoGallery": {
+        "title": "视频画廊",
+        "slug": "shipin-hualang",
+        "description": "观看全球团队最精彩的AI转换挑战视频。",
+        "metaTitle": "视频画廊 | Supacamp",
+        "metaDescription": "浏览全球团队的AI转换视频。"
+      },
+      "teamVsTeam": {
+        "title": "团队对战",
+        "slug": "tuandui-duizhan",
+        "description": "向对手团队发起正面挑战，证明谁才是最强。",
+        "metaTitle": "团队对战挑战 | Supacamp",
+        "metaDescription": "向其他团队发起正面对决！"
+      },
+      "parentalControls": {
+        "title": "家长控制",
+        "slug": "jiazhang-kongzhi",
+        "description": "为家长提供完全的可见性和控制。信任需要建立。",
+        "metaTitle": "家长控制 | Supacamp",
+        "metaDescription": "Supacamp为家长提供孩子体验的完全控制。"
+      },
+      "rewards": {
+        "title": "奖励与徽章",
+        "slug": "jiangli",
+        "description": "赢取贴纸徽章，解锁成就，展示团队成果。",
+        "metaTitle": "奖励与徽章 | Supacamp",
+        "metaDescription": "完成挑战获得有趣的徽章和奖励。"
+      }
+    },
+    "howItWorks": {
+      "title": "运作方式",
+      "step1": {
+        "title": "组建团队",
+        "description": "创建团队，用简单的代码邀请朋友。"
+      },
+      "step2": {
+        "title": "选择挑战",
+        "description": "从众多有趣安全的挑战中选择。"
+      },
+      "step3": {
+        "title": "拍摄与转换",
+        "description": "拍摄完成挑战的过程。AI让它看起来超酷。"
+      }
+    },
+    "faq": {
+      "title": "常见问题",
+      "items": {
+        "whatIs": {
+          "question": "什么是Supacamp？",
+          "answer": "一个孩子们组队、完成真实挑战、用AI将视频变成精彩短片的平台。"
+        },
+        "isSafe": {
+          "question": "对我的孩子安全吗？",
+          "answer": "完全安全。COPPA合规，需家长同意，无私信，无公开个人资料，所有视频经AI审核。"
+        },
+        "howAiWorks": {
+          "question": "AI视频转换如何工作？",
+          "answer": "AI将视频转换为风格化短片——漫画风、水彩风或剪纸动画风。"
+        },
+        "cost": {
+          "question": "免费吗？",
+          "answer": "Supacamp提供免费版本，可使用基本挑战和视频转换功能。"
+        },
+        "age": {
+          "question": "适合什么年龄？",
+          "answer": "适合6-17岁儿童。13岁以下需要家长验证同意。"
+        }
+      }
+    },
+    "cta": {
+      "title": "准备好开始冒险了吗？",
+      "subtitle": "今天就创建团队，把现实世界变成你的游乐场。",
+      "button": "免费开始"
+    },
+    "about": {
+      "title": "About Supacamp",
+      "missionTitle": "Our Mission",
+      "missionText": "We believe every kid deserves an adventure. Supacamp exists to get children off screens and into the real world — running, creating, exploring, and laughing with their friends.",
+      "storyTitle": "How It Started",
+      "storyText": "Supacamp was born from a simple observation: kids love video games because of challenges, teamwork, and rewards. What if we brought those same mechanics to the real world? What if completing a backyard obstacle course felt as epic as beating a video game boss? That idea became Supacamp — a platform where real-world adventures get the AI-powered cinematic treatment they deserve.",
+      "valuesTitle": "Our Core Values",
+      "values": {
+        "safety": {
+          "title": "Safety First",
+          "description": "Every feature we build starts with the question: is this safe for kids? COPPA compliance, content moderation, and parental controls are not afterthoughts — they are the foundation."
+        },
+        "creativity": {
+          "title": "Creativity Unleashed",
+          "description": "We use AI not to replace creativity but to amplify it. When a kid films a silly dance challenge, our AI transforms it into something they never imagined possible."
+        },
+        "teamwork": {
+          "title": "Teamwork Makes the Dream Work",
+          "description": "Everything on Supacamp is built around teams. We believe kids learn best when they collaborate, communicate, and celebrate together."
+        },
+        "outdoor": {
+          "title": "The Great Outdoors",
+          "description": "Our challenges are designed to get kids moving — in parks, backyards, trails, and neighborhoods. The real world is the ultimate playground."
+        }
+      }
+    },
+    "featuresIndex": {
+      "title": "Everything Your Team Needs",
+      "subtitle": "Supacamp is packed with features designed to make outdoor adventures epic, safe, and unforgettable."
+    },
+    "featureDetail": {
+      "howItWorksTitle": "How It Works",
+      "faqTitle": "Frequently Asked Questions",
+      "ctaTitle": "Ready to Try It?",
+      "ctaSubtitle": "Create your team and experience this feature for yourself.",
+      "ctaButton": "Get Started Free",
+      "howItWorks": {
+        "aiVideo": {
+          "step1": {
+            "title": "Record Your Challenge",
+            "description": "Film your team completing any challenge using your phone camera."
+          },
+          "step2": {
+            "title": "Choose a Style",
+            "description": "Pick from comic book, watercolor, pixel art, and more AI transformation styles."
+          },
+          "step3": {
+            "title": "Watch the Magic",
+            "description": "Our AI transforms your clip into a cinematic masterpiece in minutes."
+          }
+        },
+        "teams": {
+          "step1": {
+            "title": "Create Your Team",
+            "description": "Pick a team name, choose an avatar, and set up your squad."
+          },
+          "step2": {
+            "title": "Invite Friends",
+            "description": "Share your unique invite code with friends to join your team."
+          },
+          "step3": {
+            "title": "Compete Together",
+            "description": "Take on challenges as a team and climb the leaderboard."
+          }
+        },
+        "challenges": {
+          "step1": {
+            "title": "Browse Challenges",
+            "description": "Explore dozens of challenges across six exciting categories."
+          },
+          "step2": {
+            "title": "Accept a Challenge",
+            "description": "Choose a challenge that fits your team's style and skill level."
+          },
+          "step3": {
+            "title": "Complete & Record",
+            "description": "Do the challenge in the real world, film it, and submit for points."
+          }
+        },
+        "leaderboard": {
+          "step1": {
+            "title": "Complete Challenges",
+            "description": "Every challenge your team finishes earns points."
+          },
+          "step2": {
+            "title": "Climb the Ranks",
+            "description": "Watch your team rise on global, regional, and weekly leaderboards."
+          },
+          "step3": {
+            "title": "Win Recognition",
+            "description": "Top teams earn special badges and featured spots on the platform."
+          }
+        },
+        "safety": {
+          "step1": {
+            "title": "Verified Accounts",
+            "description": "All accounts under 13 require verified parental consent."
+          },
+          "step2": {
+            "title": "AI Moderation",
+            "description": "Every video is scanned by AI before it becomes visible to others."
+          },
+          "step3": {
+            "title": "Parent Dashboard",
+            "description": "Parents have full visibility into their child's activity at all times."
+          }
+        },
+        "videoGallery": {
+          "step1": {
+            "title": "Browse Videos",
+            "description": "Explore the best AI-transformed challenge videos from teams worldwide."
+          },
+          "step2": {
+            "title": "Get Inspired",
+            "description": "See what creative styles and challenges other teams are tackling."
+          },
+          "step3": {
+            "title": "Share Your Own",
+            "description": "Complete challenges and have your best videos featured in the gallery."
+          }
+        },
+        "teamVsTeam": {
+          "step1": {
+            "title": "Issue a Challenge",
+            "description": "Pick a challenge and send it to a rival team."
+          },
+          "step2": {
+            "title": "Both Teams Compete",
+            "description": "Each team completes the same challenge and submits their video."
+          },
+          "step3": {
+            "title": "Community Votes",
+            "description": "The Supacamp community watches both videos and votes for the winner."
+          }
+        },
+        "parentalControls": {
+          "step1": {
+            "title": "Set a Parent PIN",
+            "description": "Create a secure PIN that protects all parental settings."
+          },
+          "step2": {
+            "title": "Configure Controls",
+            "description": "Set screen time limits, approve team invitations, and manage consent."
+          },
+          "step3": {
+            "title": "Monitor Activity",
+            "description": "View your child's challenges, videos, and team interactions anytime."
+          }
+        },
+        "rewards": {
+          "step1": {
+            "title": "Complete Challenges",
+            "description": "Every challenge your team finishes can unlock sticker badges."
+          },
+          "step2": {
+            "title": "Collect Badges",
+            "description": "Build your collection with rare, epic, and legendary sticker badges."
+          },
+          "step3": {
+            "title": "Show Them Off",
+            "description": "Display your badges on your team profile for everyone to see."
+          }
+        }
+      },
+      "faq": {
+        "aiVideo": {
+          "q1": {
+            "question": "What AI styles are available?",
+            "answer": "We offer comic book, watercolor, pixel art, paper craft, neon glow, and more. New styles are added regularly."
+          },
+          "q2": {
+            "question": "How long does transformation take?",
+            "answer": "Most videos are transformed within 2-5 minutes depending on length and style."
+          },
+          "q3": {
+            "question": "Is the original video kept private?",
+            "answer": "Yes. The original video is never shared publicly. Only the AI-transformed version is visible to others, and only after moderation."
+          }
+        },
+        "teams": {
+          "q1": {
+            "question": "How many people can be on a team?",
+            "answer": "Teams can have 2-8 members. The ideal team size is 3-5 for most challenges."
+          },
+          "q2": {
+            "question": "Can I be on multiple teams?",
+            "answer": "Currently, each player can belong to one team at a time."
+          },
+          "q3": {
+            "question": "Who is the team captain?",
+            "answer": "The person who creates the team is the captain. Captains can manage team settings and approve new members."
+          }
+        },
+        "challenges": {
+          "q1": {
+            "question": "Who creates the challenges?",
+            "answer": "All challenges are created and reviewed by the Supacamp team to ensure they are fun, safe, and age-appropriate."
+          },
+          "q2": {
+            "question": "Are challenges safe?",
+            "answer": "Absolutely. Every challenge includes safety notes and is reviewed by our team. Challenges are designed for outdoor fun, not dangerous stunts."
+          },
+          "q3": {
+            "question": "How many challenges are there?",
+            "answer": "We launch with dozens of challenges across six categories, with new challenges added every week."
+          }
+        },
+        "leaderboard": {
+          "q1": {
+            "question": "How are points calculated?",
+            "answer": "Points are awarded based on challenge difficulty, creativity, and completion. Bonus points are given for team vs team victories."
+          },
+          "q2": {
+            "question": "Are leaderboards fair?",
+            "answer": "Yes. We have separate leaderboards by age group and region to keep competition fair and fun."
+          },
+          "q3": {
+            "question": "How often do leaderboards reset?",
+            "answer": "Weekly leaderboards reset every Monday. Monthly leaderboards reset on the first of each month. The global leaderboard is cumulative."
+          }
+        },
+        "safety": {
+          "q1": {
+            "question": "Is Supacamp COPPA compliant?",
+            "answer": "Yes. We are fully COPPA compliant. Children under 13 require verified parental consent before they can create an account."
+          },
+          "q2": {
+            "question": "How does content moderation work?",
+            "answer": "Every video goes through AI-powered content moderation before it becomes visible. Videos flagged by AI are reviewed by human moderators."
+          },
+          "q3": {
+            "question": "Can strangers contact my child?",
+            "answer": "No. There is no direct messaging on Supacamp. Team communication happens only within approved teams, and there are no public profiles."
+          }
+        },
+        "videoGallery": {
+          "q1": {
+            "question": "Who can see videos in the gallery?",
+            "answer": "Only AI-transformed, moderated videos appear in the gallery. Original footage is never shown publicly."
+          },
+          "q2": {
+            "question": "Can I opt out of the gallery?",
+            "answer": "Yes. Parents can choose to keep all of their child's videos private through parental controls."
+          },
+          "q3": {
+            "question": "How are featured videos selected?",
+            "answer": "Featured videos are selected based on creativity, challenge difficulty, and community engagement."
+          }
+        },
+        "teamVsTeam": {
+          "q1": {
+            "question": "How are matchups made?",
+            "answer": "Teams can challenge any other team, or use the auto-match feature to find a team of similar skill level."
+          },
+          "q2": {
+            "question": "What happens if a team doesn't respond?",
+            "answer": "Challenges expire after 48 hours if the other team doesn't accept."
+          },
+          "q3": {
+            "question": "How does voting work?",
+            "answer": "Community members watch both videos and vote. Voting is anonymous and each person gets one vote per matchup."
+          }
+        },
+        "parentalControls": {
+          "q1": {
+            "question": "What can parents control?",
+            "answer": "Parents can set screen time limits, approve or block team invitations, manage video visibility, and view all activity."
+          },
+          "q2": {
+            "question": "Is the parent PIN secure?",
+            "answer": "Yes. The parent PIN is encrypted and required for all changes to safety and privacy settings."
+          },
+          "q3": {
+            "question": "Can parents delete content?",
+            "answer": "Yes. Parents can delete any of their child's videos or remove them from teams at any time."
+          }
+        },
+        "rewards": {
+          "q1": {
+            "question": "What kinds of badges are there?",
+            "answer": "Badges come in four rarities: common, rare, epic, and legendary. Each category of challenges has unique badge designs."
+          },
+          "q2": {
+            "question": "Can badges be traded?",
+            "answer": "Not currently. Badges are personal achievements tied to your team's accomplishments."
+          },
+          "q3": {
+            "question": "Are there physical rewards?",
+            "answer": "Currently all rewards are digital sticker badges. Physical reward options may be explored in the future."
+          }
+        }
+      }
+    },
+    "leaderboardPage": {
+      "title": "Leaderboard",
+      "subtitle": "See the top teams competing on Supacamp. Complete challenges and climb the ranks!",
+      "rank": "Rank",
+      "team": "Team",
+      "points": "Points",
+      "challenges": "Challenges",
+      "ctaTitle": "Want to See Your Team Here?",
+      "ctaSubtitle": "Create a team, complete challenges, and climb the leaderboard.",
+      "ctaButton": "Start Your Team"
+    },
+    "challengesPage": {
+      "title": "Explore Challenges",
+      "subtitle": "From athletic feats to creative quests, there is a challenge for every team. Here is a taste of what awaits.",
+      "categories": {
+        "athletic": "Athletic",
+        "creative": "Creative",
+        "exploration": "Exploration",
+        "teamwork": "Teamwork",
+        "silly": "Silly",
+        "learning": "Learning"
+      },
+      "difficulty": "Difficulty",
+      "points": "{points} pts",
+      "players": "{min}-{max} players",
+      "ctaTitle": "Ready to Take On a Challenge?",
+      "ctaSubtitle": "Join Supacamp and start completing challenges with your team.",
+      "ctaButton": "Join Now"
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "subtitle": "Have questions, feedback, or partnership ideas? We would love to hear from you.",
+      "nameLabel": "Your Name",
+      "namePlaceholder": "Enter your name",
+      "emailLabel": "Your Email",
+      "emailPlaceholder": "you@example.com",
+      "messageLabel": "Your Message",
+      "messagePlaceholder": "Tell us what is on your mind...",
+      "submitButton": "Send Message",
+      "successTitle": "Message Sent!",
+      "successText": "Thanks for reaching out. We will get back to you as soon as possible."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "lastUpdated": "Last updated: March 2026",
+      "intro": "At Supacamp, protecting the privacy of children is our highest priority. This Privacy Policy explains how we collect, use, and safeguard information.",
+      "coppaTitle": "COPPA Compliance (Children's Online Privacy Protection Act)",
+      "coppaText1": "Supacamp is fully compliant with COPPA. We do not collect personal information from children under 13 without verified parental consent.",
+      "coppaText2": "Parents or guardians must provide verifiable consent before a child under 13 can create an account. Parents can review, delete, or refuse further collection of their child's information at any time.",
+      "coppaText3": "We collect only the minimum information necessary to provide the service: a display name (not the child's real name), an avatar selection, challenge participation data, and uploaded video content.",
+      "gdprTitle": "GDPR Compliance (General Data Protection Regulation)",
+      "gdprText1": "For users in the European Economic Area (EEA), we process personal data in accordance with the GDPR.",
+      "gdprText2": "You have the right to access, rectify, erase, restrict processing, and port your data. You may also object to processing at any time.",
+      "gdprText3": "We process data based on consent (for children's accounts, parental consent) and legitimate interest (for platform safety and moderation).",
+      "gdprText4": "To exercise any of your rights, contact us at privacy@supacamp.com.",
+      "dataCollectionTitle": "What We Collect",
+      "dataCollectionText": "Display names, avatar selections, team membership, challenge participation records, uploaded videos, and basic usage analytics. We do not collect real names, addresses, phone numbers, or precise location data from children.",
+      "dataSecurityTitle": "Data Security",
+      "dataSecurityText": "All data is encrypted in transit and at rest. Videos are stored securely and are only accessible after AI moderation review. We conduct regular security audits.",
+      "contactTitle": "Contact Us",
+      "contactText": "For privacy-related questions or to exercise your rights, email us at privacy@supacamp.com."
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "lastUpdated": "Last updated: March 2026",
+      "intro": "Welcome to Supacamp. By using our platform, you agree to these Terms of Service. Please read them carefully.",
+      "eligibilityTitle": "Eligibility",
+      "eligibilityText": "Supacamp is designed for children aged 6-17. Children under 13 must have verified parental consent to create an account. Parents or guardians are responsible for their child's use of the platform.",
+      "accountsTitle": "Accounts",
+      "accountsText": "You are responsible for maintaining the security of your account. Do not share your password. Parents can manage their child's account through the parental controls dashboard.",
+      "contentTitle": "User Content",
+      "contentText1": "By uploading videos to Supacamp, you grant us a license to process, transform (via AI), moderate, and display the transformed content on the platform.",
+      "contentText2": "Original videos are stored securely and never displayed publicly. Only AI-transformed versions are shown, and only after passing content moderation.",
+      "contentText3": "You must not upload content that is violent, inappropriate, or violates any laws. Content that violates our guidelines will be removed.",
+      "safetyTitle": "Safety & Conduct",
+      "safetyText1": "All challenges on Supacamp are designed to be safe and fun. Users must follow the safety guidelines provided with each challenge.",
+      "safetyText2": "Supacamp is not responsible for injuries that occur during challenge completion. Parental supervision is recommended for younger children.",
+      "safetyText3": "Harassment, bullying, or any form of abuse is strictly prohibited and will result in immediate account termination.",
+      "ipTitle": "Intellectual Property",
+      "ipText": "Supacamp, its logo, design, and AI transformation technology are proprietary. You may not copy, modify, or distribute our platform or its content without permission.",
+      "terminationTitle": "Termination",
+      "terminationText": "We reserve the right to suspend or terminate accounts that violate these terms. Parents may delete their child's account at any time through parental controls.",
+      "disclaimerTitle": "Disclaimer",
+      "disclaimerText": "Supacamp is provided as-is. While we strive for reliability, we do not guarantee uninterrupted access. We are not liable for any damages arising from use of the platform.",
+      "contactTitle": "Contact",
+      "contactText": "For questions about these terms, contact us at legal@supacamp.com."
+    }
   },
   "app": {
-    "dashboard": { "welcome": "欢迎回来，{name}！", "yourTeam": "你的团队", "activeChallenges": "活跃挑战", "recentVideos": "最近视频", "teamRank": "团队排名", "noTeam": "你还没有加入团队。", "createTeam": "创建团队", "joinTeam": "加入团队" },
-    "team": { "members": "成员", "inviteCode": "邀请码", "copyCode": "复制代码", "codeCopied": "已复制！", "points": "积分", "challengesCompleted": "已完成挑战", "rank": "排名", "captain": "队长", "member": "队员", "leaveTeam": "离开团队", "settings": "团队设置" },
-    "challenges": { "available": "可用挑战", "inProgress": "进行中", "completed": "已完成", "difficulty": "难度", "points": "{points}积分", "duration": "约{duration}", "players": "{min}-{max}人", "startChallenge": "开始挑战", "safetyFirst": "安全第一", "viewDetails": "查看详情" },
-    "videos": { "myVideos": "我的视频", "processing": "处理中...", "ready": "就绪", "failed": "处理失败", "pendingModeration": "审核中", "original": "原版", "transformed": "AI转换" },
-    "nav": { "dashboard": "仪表板", "team": "团队", "challenges": "挑战", "videos": "视频", "leaderboard": "排行榜", "settings": "设置" },
-    "settings": { "title": "设置", "displayName": "显示名称", "avatar": "头像", "locale": "语言", "parentalControls": "家长控制", "parentPin": "家长PIN", "saveSuccess": "设置已保存", "currentAvatar": "当前头像" },
-    "leaderboard": { "title": "排行榜", "global": "全球", "regional": "地区", "weekly": "每周", "monthly": "每月", "rank": "排名", "team": "团队", "points": "积分", "challengesWon": "获胜挑战" },
-    "teamCreate": { "title": "创建团队", "teamName": "团队名称", "teamNamePlaceholder": "输入团队名称", "selectAvatar": "选择团队头像", "create": "创建团队" },
-    "teamDetail": { "stats": "团队统计", "challengeHistory": "挑战历史", "noHistory": "还没有完成任何挑战。" }
+    "dashboard": {
+      "welcome": "欢迎回来，{name}！",
+      "yourTeam": "你的团队",
+      "activeChallenges": "活跃挑战",
+      "recentVideos": "最近视频",
+      "teamRank": "团队排名",
+      "noTeam": "你还没有加入团队。",
+      "createTeam": "创建团队",
+      "joinTeam": "加入团队"
+    },
+    "team": {
+      "members": "成员",
+      "inviteCode": "邀请码",
+      "copyCode": "复制代码",
+      "codeCopied": "已复制！",
+      "points": "积分",
+      "challengesCompleted": "已完成挑战",
+      "rank": "排名",
+      "captain": "队长",
+      "member": "队员",
+      "leaveTeam": "离开团队",
+      "settings": "团队设置"
+    },
+    "challenges": {
+      "available": "可用挑战",
+      "inProgress": "进行中",
+      "completed": "已完成",
+      "difficulty": "难度",
+      "points": "{points}积分",
+      "duration": "约{duration}",
+      "players": "{min}-{max}人",
+      "startChallenge": "开始挑战",
+      "safetyFirst": "安全第一",
+      "viewDetails": "查看详情"
+    },
+    "videos": {
+      "myVideos": "我的视频",
+      "processing": "处理中...",
+      "ready": "就绪",
+      "failed": "处理失败",
+      "pendingModeration": "审核中",
+      "original": "原版",
+      "transformed": "AI转换"
+    },
+    "nav": {
+      "dashboard": "仪表板",
+      "team": "团队",
+      "challenges": "挑战",
+      "videos": "视频",
+      "leaderboard": "排行榜",
+      "settings": "设置"
+    },
+    "settings": {
+      "title": "设置",
+      "displayName": "显示名称",
+      "avatar": "头像",
+      "locale": "语言",
+      "parentalControls": "家长控制",
+      "parentPin": "家长PIN",
+      "saveSuccess": "设置已保存",
+      "currentAvatar": "当前头像"
+    },
+    "leaderboard": {
+      "title": "排行榜",
+      "global": "全球",
+      "regional": "地区",
+      "weekly": "每周",
+      "monthly": "每月",
+      "rank": "排名",
+      "team": "团队",
+      "points": "积分",
+      "challengesWon": "获胜挑战"
+    },
+    "teamCreate": {
+      "title": "创建团队",
+      "teamName": "团队名称",
+      "teamNamePlaceholder": "输入团队名称",
+      "selectAvatar": "选择团队头像",
+      "create": "创建团队"
+    },
+    "teamDetail": {
+      "stats": "团队统计",
+      "challengeHistory": "挑战历史",
+      "noHistory": "还没有完成任何挑战。"
+    }
   },
   "admin": {
-    "nav": { "dashboard": "仪表板", "challenges": "挑战", "moderation": "审核", "users": "用户", "analytics": "分析" },
-    "dashboard": { "title": "管理后台", "totalUsers": "总用户", "totalTeams": "总团队", "totalChallenges": "总挑战", "pendingModeration": "待审核" },
-    "challenges": { "title": "管理挑战", "createNew": "创建挑战", "status": "状态", "approve": "通过", "reject": "拒绝" },
-    "challengeForm": { "title": "新挑战", "challengeTitle": "标题", "description": "描述", "instructions": "说明", "safetyNotes": "安全须知", "category": "分类", "difficulty": "难度", "pointsReward": "积分奖励", "estimatedDuration": "预计时长", "minPlayers": "最少人数", "maxPlayers": "最多人数", "indoor": "室内", "outdoor": "户外", "create": "创建挑战" },
-    "moderation": { "title": "内容审核", "queue": "审核队列", "approve": "通过", "reject": "拒绝", "flag": "标记", "noItems": "没有待处理项目。" },
-    "users": { "title": "用户管理", "name": "名称", "email": "邮箱", "status": "状态", "joined": "注册日期", "active": "活跃", "inactive": "不活跃" },
-    "analytics": { "title": "数据分析", "pageViews": "页面浏览", "signups": "注册数", "challengesCompleted": "完成挑战", "period": "时间段", "last7Days": "最近7天", "last30Days": "最近30天", "allTime": "全部时间" }
+    "nav": {
+      "dashboard": "仪表板",
+      "challenges": "挑战",
+      "moderation": "审核",
+      "users": "用户",
+      "analytics": "分析"
+    },
+    "dashboard": {
+      "title": "管理后台",
+      "totalUsers": "总用户",
+      "totalTeams": "总团队",
+      "totalChallenges": "总挑战",
+      "pendingModeration": "待审核"
+    },
+    "challenges": {
+      "title": "管理挑战",
+      "createNew": "创建挑战",
+      "status": "状态",
+      "approve": "通过",
+      "reject": "拒绝"
+    },
+    "challengeForm": {
+      "title": "新挑战",
+      "challengeTitle": "标题",
+      "description": "描述",
+      "instructions": "说明",
+      "safetyNotes": "安全须知",
+      "category": "分类",
+      "difficulty": "难度",
+      "pointsReward": "积分奖励",
+      "estimatedDuration": "预计时长",
+      "minPlayers": "最少人数",
+      "maxPlayers": "最多人数",
+      "indoor": "室内",
+      "outdoor": "户外",
+      "create": "创建挑战"
+    },
+    "moderation": {
+      "title": "内容审核",
+      "queue": "审核队列",
+      "approve": "通过",
+      "reject": "拒绝",
+      "flag": "标记",
+      "noItems": "没有待处理项目。"
+    },
+    "users": {
+      "title": "用户管理",
+      "name": "名称",
+      "email": "邮箱",
+      "status": "状态",
+      "joined": "注册日期",
+      "active": "活跃",
+      "inactive": "不活跃"
+    },
+    "analytics": {
+      "title": "数据分析",
+      "pageViews": "页面浏览",
+      "signups": "注册数",
+      "challengesCompleted": "完成挑战",
+      "period": "时间段",
+      "last7Days": "最近7天",
+      "last30Days": "最近30天",
+      "allTime": "全部时间"
+    }
   },
-  "common": { "loading": "加载中...", "error": "出了点问题", "retry": "重试", "save": "保存", "cancel": "取消", "delete": "删除", "edit": "编辑", "back": "返回", "next": "下一步", "submit": "提交", "search": "搜索", "noResults": "无结果", "signIn": "登录", "signUp": "注册", "signOut": "退出", "learnMore": "了解更多", "readMore": "阅读更多", "viewAll": "查看全部", "home": "首页", "features": "功能", "blog": "博客", "about": "关于", "contact": "联系", "privacy": "隐私", "terms": "条款", "language": "语言" },
-  "blog": { "title": "博客", "readMore": "阅读更多", "readingTime": "{minutes}分钟阅读", "publishedOn": "发布于{date}", "categories": { "outdoorActivities": "户外活动", "aiCreativity": "AI与创意", "teamBuilding": "团队建设", "parentingTips": "育儿建议", "childSafety": "网络安全" }, "relatedPosts": "相关文章", "tableOfContents": "目录" },
-  "auth": { "signInTitle": "欢迎回来", "signUpTitle": "加入冒险", "email": "邮箱", "password": "密码", "confirmPassword": "确认密码", "displayName": "选择显示名称", "dateOfBirth": "出生日期", "parentEmail": "家长邮箱", "parentConsent": "我是家长/监护人，同意孩子使用Supacamp", "forgotPassword": "忘记密码？", "noAccount": "没有账号？", "hasAccount": "已有账号？", "signInButton": "登录", "signUpButton": "创建账号", "signingIn": "登录中...", "creatingAccount": "创建中...", "parentVerification": "需要家长验证", "parentVerificationDesc": "已向家长发送邮件。需要验证和同意。", "chooseAvatar": "选择头像", "ageCheck": "你多大了？", "ageCheckDescription": "我们需要知道你的年龄来保护你。", "tooYoung": "至少需要6岁才能加入。", "parentRequired": "13岁以下需要家长帮忙。", "parentEmailDescription": "输入家长的邮箱地址。", "parentConsentTitle": "家长同意", "parentConsentDescription": "家长需要同意以下内容。", "parentConsentDataCollection": "我同意收集孩子的参与数据。", "parentConsentSafety": "我了解Supacamp使用内容审核。", "parentConsentTerms": "我已阅读并同意条款和隐私政策。", "profileSetup": "设置你的资料", "profileSetupDescription": "选择名称和头像。不要用真名！", "displayNamePlaceholder": "酷探险家42", "displayNameHint": "选个有趣的名字！不要用真名。", "step": "第{current}步/共{total}步", "forgotPasswordTitle": "重置密码", "forgotPasswordDescription": "输入邮箱接收重置链接。", "sendResetLink": "发送链接", "sendingResetLink": "发送中...", "resetLinkSent": "请检查邮箱！", "resetPasswordTitle": "新密码", "resetPasswordDescription": "输入新密码。", "resetPassword": "重置", "resettingPassword": "重置中...", "resetPasswordSuccess": "密码已重置！可以登录了。", "passwordMinLength": "至少8个字符", "passwordsMustMatch": "密码必须一致", "invalidEmail": "请输入有效邮箱", "requiredField": "必填项", "unexpectedError": "意外错误，请重试。", "backToSignIn": "返回登录" },
-  "metadata": { "siteName": "Supacamp", "homeTitle": "Supacamp — 将真实冒险变成史诗视频", "homeDescription": "组建团队，完成真实挑战，让AI转换你的视频。儿童户外冒险平台。", "blogTitle": "Supacamp博客 — 提示、挑战与户外乐趣", "blogDescription": "户外活动、团队建设、AI创意和育儿建议。", "aboutTitle": "关于Supacamp — 我们的使命", "aboutDescription": "了解Supacamp让孩子活跃和创意的使命。" }
+  "common": {
+    "loading": "加载中...",
+    "error": "出了点问题",
+    "retry": "重试",
+    "save": "保存",
+    "cancel": "取消",
+    "delete": "删除",
+    "edit": "编辑",
+    "back": "返回",
+    "next": "下一步",
+    "submit": "提交",
+    "search": "搜索",
+    "noResults": "无结果",
+    "signIn": "登录",
+    "signUp": "注册",
+    "signOut": "退出",
+    "learnMore": "了解更多",
+    "readMore": "阅读更多",
+    "viewAll": "查看全部",
+    "home": "首页",
+    "features": "功能",
+    "blog": "博客",
+    "about": "关于",
+    "contact": "联系",
+    "privacy": "隐私",
+    "terms": "条款",
+    "language": "语言",
+    "notFound": "页面未找到",
+    "notFoundDescription": "您要找的页面不存在。",
+    "backToHome": "返回首页"
+  },
+  "blog": {
+    "title": "博客",
+    "readMore": "阅读更多",
+    "readingTime": "{minutes}分钟阅读",
+    "publishedOn": "发布于{date}",
+    "categories": {
+      "outdoorActivities": "户外活动",
+      "aiCreativity": "AI与创意",
+      "teamBuilding": "团队建设",
+      "parentingTips": "育儿建议",
+      "childSafety": "网络安全"
+    },
+    "relatedPosts": "相关文章",
+    "tableOfContents": "目录",
+    "comingSoon": "Coming Soon",
+    "comingSoonText": "We are working on amazing content for the Supacamp blog. Check back soon for outdoor activity ideas, AI creativity tips, and more!",
+    "postNotFound": "Post Not Found",
+    "postNotFoundText": "The blog post you are looking for could not be found. It may have been moved or removed.",
+    "backToBlog": "Back to Blog"
+  },
+  "auth": {
+    "signInTitle": "欢迎回来",
+    "signUpTitle": "加入冒险",
+    "email": "邮箱",
+    "password": "密码",
+    "confirmPassword": "确认密码",
+    "displayName": "选择显示名称",
+    "dateOfBirth": "出生日期",
+    "parentEmail": "家长邮箱",
+    "parentConsent": "我是家长/监护人，同意孩子使用Supacamp",
+    "forgotPassword": "忘记密码？",
+    "noAccount": "没有账号？",
+    "hasAccount": "已有账号？",
+    "signInButton": "登录",
+    "signUpButton": "创建账号",
+    "signingIn": "登录中...",
+    "creatingAccount": "创建中...",
+    "parentVerification": "需要家长验证",
+    "parentVerificationDesc": "已向家长发送邮件。需要验证和同意。",
+    "chooseAvatar": "选择头像",
+    "ageCheck": "你多大了？",
+    "ageCheckDescription": "我们需要知道你的年龄来保护你。",
+    "tooYoung": "至少需要6岁才能加入。",
+    "parentRequired": "13岁以下需要家长帮忙。",
+    "parentEmailDescription": "输入家长的邮箱地址。",
+    "parentConsentTitle": "家长同意",
+    "parentConsentDescription": "家长需要同意以下内容。",
+    "parentConsentDataCollection": "我同意收集孩子的参与数据。",
+    "parentConsentSafety": "我了解Supacamp使用内容审核。",
+    "parentConsentTerms": "我已阅读并同意条款和隐私政策。",
+    "profileSetup": "设置你的资料",
+    "profileSetupDescription": "选择名称和头像。不要用真名！",
+    "displayNamePlaceholder": "酷探险家42",
+    "displayNameHint": "选个有趣的名字！不要用真名。",
+    "step": "第{current}步/共{total}步",
+    "forgotPasswordTitle": "重置密码",
+    "forgotPasswordDescription": "输入邮箱接收重置链接。",
+    "sendResetLink": "发送链接",
+    "sendingResetLink": "发送中...",
+    "resetLinkSent": "请检查邮箱！",
+    "resetPasswordTitle": "新密码",
+    "resetPasswordDescription": "输入新密码。",
+    "resetPassword": "重置",
+    "resettingPassword": "重置中...",
+    "resetPasswordSuccess": "密码已重置！可以登录了。",
+    "passwordMinLength": "至少8个字符",
+    "passwordsMustMatch": "密码必须一致",
+    "invalidEmail": "请输入有效邮箱",
+    "requiredField": "必填项",
+    "unexpectedError": "意外错误，请重试。",
+    "backToSignIn": "返回登录"
+  },
+  "metadata": {
+    "siteName": "Supacamp",
+    "homeTitle": "Supacamp — 将真实冒险变成史诗视频",
+    "homeDescription": "组建团队，完成真实挑战，让AI转换你的视频。儿童户外冒险平台。",
+    "blogTitle": "Supacamp博客 — 提示、挑战与户外乐趣",
+    "blogDescription": "户外活动、团队建设、AI创意和育儿建议。",
+    "aboutTitle": "关于Supacamp — 我们的使命",
+    "aboutDescription": "了解Supacamp让孩子活跃和创意的使命。",
+    "featuresTitle": "Supacamp Features — Everything Your Team Needs",
+    "featuresDescription": "Explore all the features that make Supacamp the ultimate outdoor adventure platform for kids. AI video, teams, challenges, leaderboards, and more.",
+    "leaderboardTitle": "Supacamp Leaderboard — Top Teams Competing",
+    "leaderboardDescription": "See the top teams on Supacamp. Complete challenges, earn points, and climb the global leaderboard.",
+    "challengesTitle": "Supacamp Challenges — Fun Outdoor Activities for Kids",
+    "challengesDescription": "Explore exciting outdoor challenges across six categories. Athletic, creative, exploration, teamwork, silly, and learning challenges await.",
+    "contactTitle": "Contact Supacamp — Get in Touch",
+    "contactDescription": "Have questions about Supacamp? Reach out to our team. We would love to hear from you.",
+    "privacyTitle": "Privacy Policy — Supacamp",
+    "privacyDescription": "Learn how Supacamp protects your child's privacy. COPPA and GDPR compliant.",
+    "termsTitle": "Terms of Service — Supacamp",
+    "termsDescription": "Read the Supacamp Terms of Service. Rules, guidelines, and policies for using our platform.",
+    "blogPostNotFoundTitle": "Post Not Found — Supacamp Blog",
+    "blogPostNotFoundDescription": "The blog post you are looking for could not be found."
+  }
 }

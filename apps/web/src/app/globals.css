@@ -1,0 +1,222 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Base — warm paper tones */
+  --color-paper-cream: #FFF8F0;
+  --color-paper-warm: #FEF3E2;
+  --color-paper-ruled: #E8DDD3;
+
+  /* Primary — soft coral/rose */
+  --color-primary-50: #FFF1F0;
+  --color-primary-100: #FFE0DD;
+  --color-primary-200: #FFC2BA;
+  --color-primary-300: #FF9E93;
+  --color-primary-400: #FF7A6B;
+  --color-primary-500: #F25C4E;
+  --color-primary-600: #D94438;
+
+  /* Secondary — warm golden yellow */
+  --color-secondary-50: #FFFBEB;
+  --color-secondary-100: #FFF3C4;
+  --color-secondary-200: #FCE588;
+  --color-secondary-300: #FADB5F;
+  --color-secondary-400: #F7C948;
+  --color-secondary-500: #E5A50A;
+
+  /* Tertiary — soft sage green */
+  --color-tertiary-50: #F0FFF4;
+  --color-tertiary-100: #C6F6D5;
+  --color-tertiary-200: #9AE6B4;
+  --color-tertiary-300: #68D391;
+  --color-tertiary-400: #48BB78;
+
+  /* Accent — dusty lavender */
+  --color-accent-50: #F5F3FF;
+  --color-accent-100: #EDE9FE;
+  --color-accent-200: #DDD6FE;
+  --color-accent-300: #C4B5FD;
+  --color-accent-400: #A78BFA;
+
+  /* Neutrals — warm grays (ink) */
+  --color-ink-900: #2D2A24;
+  --color-ink-700: #4A4540;
+  --color-ink-500: #78716C;
+  --color-ink-300: #A8A29E;
+  --color-ink-100: #E7E5E4;
+
+  /* Functional */
+  --color-danger: #E53E3E;
+  --color-warning: #ED8936;
+  --color-success: #48BB78;
+  --color-info: #4299E1;
+
+  /* Fonts */
+  --font-heading: 'Patrick Hand', cursive;
+  --font-body: 'Nunito', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Shadows — warm-tinted */
+  --shadow-paper: 2px 3px 8px rgba(45, 42, 36, 0.12);
+}
+
+/* Base styles */
+body {
+  background-color: var(--color-paper-cream);
+  color: var(--color-ink-900);
+  font-family: var(--font-body);
+}
+
+/* Paper texture overlay */
+.paper-texture {
+  background-image:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+/* Notebook ruled lines effect */
+.notebook-lines {
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 31px,
+    var(--color-paper-ruled) 31px,
+    var(--color-paper-ruled) 32px
+  );
+  background-position: 0 8px;
+}
+
+/* Torn paper edge (top) */
+.torn-edge-top {
+  position: relative;
+}
+.torn-edge-top::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: linear-gradient(135deg, var(--color-paper-cream) 25%, transparent 25%) -4px 0,
+    linear-gradient(225deg, var(--color-paper-cream) 25%, transparent 25%) -4px 0;
+  background-size: 8px 8px;
+}
+
+/* Torn paper edge (bottom) */
+.torn-edge-bottom {
+  position: relative;
+}
+.torn-edge-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: linear-gradient(315deg, var(--color-paper-cream) 25%, transparent 25%) 0 0,
+    linear-gradient(45deg, var(--color-paper-cream) 25%, transparent 25%) 0 0;
+  background-size: 8px 8px;
+}
+
+/* Hand-drawn border effect */
+.hand-drawn-border {
+  border: 2px solid var(--color-ink-900);
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+
+/* Sticker badge effect */
+.sticker {
+  filter: drop-shadow(2px 3px 2px rgba(45, 42, 36, 0.2));
+  transform: rotate(-2deg);
+  transition: transform 0.2s ease;
+}
+.sticker:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+/* Stamp effect */
+.stamp {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border: 3px solid currentColor;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  transform: rotate(-3deg);
+  opacity: 0.85;
+}
+.stamp-approved { color: var(--color-success); }
+.stamp-completed { color: var(--color-primary-500); }
+.stamp-pending { color: var(--color-warning); }
+
+/* Washi tape decoration */
+.washi-tape {
+  position: relative;
+}
+.washi-tape::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 80px;
+  height: 24px;
+  background-color: var(--color-secondary-200);
+  opacity: 0.7;
+}
+
+/* Paper clip decoration */
+.paper-clip::after {
+  content: '';
+  position: absolute;
+  top: -6px;
+  right: 16px;
+  width: 20px;
+  height: 40px;
+  border: 2px solid var(--color-ink-300);
+  border-radius: 8px 8px 0 0;
+  border-bottom: none;
+}
+
+/* Crayon highlight */
+.crayon-highlight {
+  background: linear-gradient(
+    104deg,
+    rgba(255, 122, 107, 0) 0.9%,
+    rgba(255, 122, 107, 1.25) 2.4%,
+    rgba(255, 122, 107, 0.5) 5.8%,
+    rgba(255, 122, 107, 0.1) 93%,
+    rgba(255, 122, 107, 0.7) 96%,
+    rgba(255, 122, 107, 0) 98%
+  );
+  padding: 0 4px;
+}
+
+/* Folded corner card effect */
+.folded-corner {
+  position: relative;
+  overflow: hidden;
+}
+.folded-corner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 24px 24px 0;
+  border-color: transparent var(--color-paper-cream) transparent transparent;
+  filter: drop-shadow(-1px 1px 1px rgba(45, 42, 36, 0.1));
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .sticker,
+  .sticker:hover {
+    transform: none;
+    transition: none;
+  }
+  .stamp {
+    transform: none;
+  }
+}

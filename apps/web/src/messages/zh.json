@@ -1,0 +1,216 @@
+{
+  "marketing": {
+    "hero": {
+      "title": "Turn Real Adventures Into Epic Videos",
+      "subtitle": "Form teams. Complete challenges. Let AI make it legendary.",
+      "cta": "Start Your Team",
+      "secondaryCta": "See How It Works"
+    },
+    "socialProof": {
+      "teamsCreated": "{count} teams created",
+      "challengesCompleted": "{count} challenges completed",
+      "videosTransformed": "{count} videos transformed"
+    },
+    "features": {
+      "aiVideo": {
+        "title": "AI-Powered Video Magic",
+        "slug": "ai-video-transformation",
+        "description": "Record your challenge. Our AI transforms it into a cinematic masterpiece.",
+        "metaTitle": "AI Video Transformation for Kids | Supacamp",
+        "metaDescription": "Watch how AI transforms your real-world challenge videos into stunning, stylized clips. Safe, fun, and creative."
+      },
+      "teams": {
+        "title": "Build Your Dream Team",
+        "slug": "create-your-team",
+        "description": "Invite your friends, form a squad, and take on challenges together.",
+        "metaTitle": "Create Your Team | Supacamp",
+        "metaDescription": "Form your team, invite friends, and compete together in fun outdoor challenges. Team up and rise on the leaderboard!"
+      },
+      "challenges": {
+        "title": "Epic Challenges Await",
+        "slug": "challenges",
+        "description": "From athletic feats to creative quests — there's a challenge for every team.",
+        "metaTitle": "Fun Challenges for Kids | Supacamp",
+        "metaDescription": "Explore exciting outdoor challenges designed for kids. Athletic, creative, exploration, and teamwork challenges await your team."
+      },
+      "leaderboard": {
+        "title": "Climb the Leaderboard",
+        "slug": "leaderboard",
+        "description": "Compete globally, regionally, or weekly. Every challenge counts.",
+        "metaTitle": "Global Leaderboard | Supacamp",
+        "metaDescription": "See how your team ranks against others worldwide. Compete in weekly, monthly, and global leaderboards."
+      },
+      "safety": {
+        "title": "Safety First, Always",
+        "slug": "child-safety",
+        "description": "Built from the ground up with child safety as the #1 priority.",
+        "metaTitle": "Child Safety & Privacy | Supacamp",
+        "metaDescription": "Learn how Supacamp protects your child with COPPA compliance, content moderation, and privacy-first design."
+      },
+      "videoGallery": {
+        "title": "Video Gallery",
+        "slug": "video-gallery",
+        "description": "Watch the most amazing AI-transformed challenge videos from teams worldwide.",
+        "metaTitle": "Video Gallery | Supacamp",
+        "metaDescription": "Browse incredible AI-transformed videos from teams around the world. See what happens when real adventures meet AI magic."
+      },
+      "teamVsTeam": {
+        "title": "Team vs Team",
+        "slug": "team-vs-team",
+        "description": "Challenge rival teams head-to-head and prove who's the best.",
+        "metaTitle": "Team vs Team Challenges | Supacamp",
+        "metaDescription": "Challenge other teams to head-to-head competitions. Complete the same challenge and let the community vote for the winner!"
+      },
+      "parentalControls": {
+        "title": "Parental Controls",
+        "slug": "parental-controls",
+        "description": "Full visibility and control for parents. Because trust is earned.",
+        "metaTitle": "Parental Controls | Supacamp",
+        "metaDescription": "Supacamp gives parents complete control over their child's experience with PIN protection, consent management, and activity monitoring."
+      },
+      "rewards": {
+        "title": "Rewards & Badges",
+        "slug": "rewards",
+        "description": "Earn sticker badges, unlock achievements, and show off your team's accomplishments.",
+        "metaTitle": "Rewards & Badges | Supacamp",
+        "metaDescription": "Earn fun sticker badges and rewards as your team completes challenges. Collect them all and show off your achievements!"
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "step1": { "title": "Form Your Team", "description": "Create a team and invite your friends with a simple code." },
+      "step2": { "title": "Pick a Challenge", "description": "Choose from dozens of fun, safe, admin-approved challenges." },
+      "step3": { "title": "Record & Transform", "description": "Film yourselves completing the challenge. AI makes it look incredible." }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": {
+        "whatIs": { "question": "What is Supacamp?", "answer": "Supacamp is a platform where kids form teams, complete real-world challenges, and use AI to transform their videos into stunning clips. It's designed to get kids active, creative, and having fun outdoors." },
+        "isSafe": { "question": "Is Supacamp safe for my child?", "answer": "Absolutely. Child safety is our #1 priority. We're COPPA compliant, require parental consent, have no direct messaging, no public profiles, and every video goes through AI content moderation before anyone sees it." },
+        "howAiWorks": { "question": "How does the AI video transformation work?", "answer": "After your team records a challenge video, our AI (powered by cutting-edge technology) transforms it into a stylized, cinematic clip — think comic book action, watercolor dreams, or paper craft animations. The original is always kept private." },
+        "cost": { "question": "Is Supacamp free?", "answer": "Supacamp offers a free tier with access to challenges and basic video transformations. Premium features may be available in the future." },
+        "age": { "question": "What ages is Supacamp for?", "answer": "Supacamp is designed for kids aged 6-17. Children under 13 require verified parental consent to create an account." }
+      }
+    },
+    "cta": {
+      "title": "Ready to Start Your Adventure?",
+      "subtitle": "Create your team today and turn the real world into your playground.",
+      "button": "Get Started Free"
+    }
+  },
+  "app": {
+    "dashboard": {
+      "welcome": "Welcome back, {name}!",
+      "yourTeam": "Your Team",
+      "activeChallenges": "Active Challenges",
+      "recentVideos": "Recent Videos",
+      "teamRank": "Team Rank",
+      "noTeam": "You haven't joined a team yet.",
+      "createTeam": "Create a Team",
+      "joinTeam": "Join a Team"
+    },
+    "team": {
+      "members": "Members",
+      "inviteCode": "Invite Code",
+      "copyCode": "Copy Code",
+      "codeCopied": "Code copied!",
+      "points": "Points",
+      "challengesCompleted": "Challenges Completed",
+      "rank": "Rank",
+      "captain": "Captain",
+      "member": "Member",
+      "leaveTeam": "Leave Team",
+      "settings": "Team Settings"
+    },
+    "challenges": {
+      "available": "Available Challenges",
+      "inProgress": "In Progress",
+      "completed": "Completed",
+      "difficulty": "Difficulty",
+      "points": "{points} points",
+      "duration": "Est. {duration}",
+      "players": "{min}-{max} players",
+      "startChallenge": "Start Challenge",
+      "safetyFirst": "Safety First",
+      "viewDetails": "View Details"
+    },
+    "videos": {
+      "myVideos": "My Videos",
+      "processing": "Processing...",
+      "ready": "Ready",
+      "failed": "Processing Failed",
+      "pendingModeration": "Under Review",
+      "original": "Original",
+      "transformed": "AI Transformed"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try Again",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "search": "Search",
+    "noResults": "No results found",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "home": "Home",
+    "features": "Features",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "language": "Language"
+  },
+  "blog": {
+    "title": "Blog",
+    "readMore": "Read More",
+    "readingTime": "{minutes} min read",
+    "publishedOn": "Published on {date}",
+    "categories": {
+      "outdoorActivities": "Outdoor Activities",
+      "aiCreativity": "AI & Creativity",
+      "teamBuilding": "Team Building",
+      "parentingTips": "Parenting Tips",
+      "childSafety": "Online Safety"
+    },
+    "relatedPosts": "Related Posts",
+    "tableOfContents": "Table of Contents"
+  },
+  "auth": {
+    "signInTitle": "Welcome Back",
+    "signUpTitle": "Join the Adventure",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "displayName": "Choose Your Display Name",
+    "dateOfBirth": "Date of Birth",
+    "parentEmail": "Parent's Email",
+    "parentConsent": "I am the parent/guardian and I consent to my child using Supacamp",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "parentVerification": "Parent Verification Required",
+    "parentVerificationDesc": "We've sent an email to your parent. They need to verify and give consent before you can start.",
+    "chooseAvatar": "Choose Your Avatar"
+  },
+  "metadata": {
+    "siteName": "Supacamp",
+    "homeTitle": "Supacamp — Turn Real Adventures Into Epic Videos",
+    "homeDescription": "Form teams, complete real-world challenges, and let AI transform your videos into stunning clips. The outdoor adventure platform for kids.",
+    "blogTitle": "Supacamp Blog — Tips, Challenges & Outdoor Fun",
+    "blogDescription": "Discover outdoor activity ideas, team-building tips, AI creativity insights, and parenting advice on the Supacamp blog.",
+    "aboutTitle": "About Supacamp — Our Mission to Get Kids Outside",
+    "aboutDescription": "Learn about Supacamp's mission to get kids active, creative, and off screens by making real-world adventures more exciting than video games."
+  }
+}

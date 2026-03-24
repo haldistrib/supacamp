@@ -10,17 +10,17 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const variantStyles: Record<ButtonVariant, string> = {
-  primary: 'bg-primary-500 text-white hover:bg-primary-600 active:bg-primary-700 shadow-paper',
-  secondary: 'bg-secondary-300 text-ink-900 hover:bg-secondary-400 active:bg-secondary-500 shadow-paper',
-  outline: 'border-2 border-ink-900 text-ink-900 hover:bg-paper-warm active:bg-paper-ruled hand-drawn-border',
-  ghost: 'text-ink-700 hover:bg-paper-warm active:bg-paper-ruled',
+  primary: 'bg-ink-900 text-white hover:bg-ink-700 active:bg-ink-900',
+  secondary: 'bg-primary-500 text-white hover:bg-primary-600 active:bg-primary-700',
+  outline: 'border border-gray-300 text-ink-700 hover:bg-gray-50 active:bg-gray-100',
+  ghost: 'text-ink-500 hover:text-ink-900 hover:bg-gray-50 active:bg-gray-100',
   danger: 'bg-danger text-white hover:opacity-90 active:opacity-80',
 };
 
 const sizeStyles: Record<ButtonSize, string> = {
-  sm: 'px-3 py-1.5 text-sm',
-  md: 'px-5 py-2.5 text-base',
-  lg: 'px-8 py-3.5 text-lg',
+  sm: 'px-3.5 py-1.5 text-sm',
+  md: 'px-5 py-2.5 text-sm',
+  lg: 'px-7 py-3 text-base',
 };
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -29,8 +29,8 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         ref={ref}
         className={`
-          inline-flex items-center justify-center font-heading font-bold rounded-lg
-          transition-all duration-200 ease-in-out
+          inline-flex items-center justify-center font-medium rounded-lg
+          transition-colors duration-150
           focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2
           disabled:opacity-50 disabled:cursor-not-allowed
           ${variantStyles[variant]}

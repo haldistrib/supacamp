@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/lib/i18n/navigation';
 import { Button } from '@/components/ui';
+import { LocaleSwitcher } from './locale-switcher';
 import { useState } from 'react';
 
 export function Header() {
@@ -11,26 +12,29 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { label: t('features'), href: '/features/ai-video-transformation' },
+    { label: t('features'), href: '/features' },
     { label: t('blog'), href: '/blog' },
     { label: t('about'), href: '/about' },
+    { label: t('contact'), href: '/contact' },
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-paper-cream/95 backdrop-blur-sm border-b border-ink-100">
-      <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="font-heading text-2xl text-primary-500 hover:text-primary-600 transition-colors">
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-100">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+        <Link href="/" className="text-xl font-bold tracking-tight text-ink-900 hover:text-primary-500 transition-colors">
           Supacamp
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={`text-sm font-bold transition-colors hover:text-primary-500 ${
-                pathname === item.href ? 'text-primary-500' : 'text-ink-700'
+              className={`text-sm font-medium transition-colors hover:text-ink-900 ${
+                pathname === item.href || pathname.startsWith(item.href + '/')
+                  ? 'text-ink-900'
+                  : 'text-ink-500'
               }`}
             >
               {item.label}
@@ -39,6 +43,7 @@ export function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
+          <LocaleSwitcher />
           <Link href="/sign-in">
             <Button variant="ghost" size="sm">{t('signIn')}</Button>
           </Link>
@@ -48,35 +53,38 @@ export function Header() {
         </div>
 
         {/* Mobile menu button */}
-        <button
-          className="md:hidden p-2 text-ink-700"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            {mobileMenuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            )}
-          </svg>
-        </button>
+        <div className="flex md:hidden items-center gap-2">
+          <LocaleSwitcher />
+          <button
+            className="p-2 text-ink-500 hover:text-ink-900 transition-colors"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              {mobileMenuOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-ink-100 bg-paper-cream px-4 py-4 space-y-3">
+        <div className="md:hidden border-t border-gray-100 bg-white px-4 py-4 space-y-1">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="block text-ink-700 font-bold py-2"
+              className="block text-ink-700 text-sm font-medium py-2.5 px-3 rounded-lg hover:bg-gray-50 transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               {item.label}
             </Link>
           ))}
-          <div className="flex gap-3 pt-2">
+          <div className="flex gap-3 pt-3 border-t border-gray-100 mt-2">
             <Link href="/sign-in" className="flex-1">
               <Button variant="outline" size="sm" className="w-full">{t('signIn')}</Button>
             </Link>

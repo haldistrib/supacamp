@@ -2,19 +2,18 @@ import type { Metadata } from 'next';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { Patrick_Hand, Nunito, JetBrains_Mono } from 'next/font/google';
+import { Inter, JetBrains_Mono } from 'next/font/google';
 import { routing } from '@/lib/i18n/routing';
 import { rtlLocales, type Locale } from '@/lib/i18n/config';
 import '@/app/globals.css';
 
-const patrickHand = Patrick_Hand({
-  weight: '400',
+const inter = Inter({
   subsets: ['latin'],
   variable: '--font-heading',
   display: 'swap',
 });
 
-const nunito = Nunito({
+const interBody = Inter({
   subsets: ['latin'],
   variable: '--font-body',
   display: 'swap',
@@ -55,9 +54,9 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       dir={isRtl ? 'rtl' : 'ltr'}
-      className={`${patrickHand.variable} ${nunito.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${interBody.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-body bg-paper-cream text-ink-900">
+      <body className="min-h-full flex flex-col font-body bg-white text-ink-900">
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

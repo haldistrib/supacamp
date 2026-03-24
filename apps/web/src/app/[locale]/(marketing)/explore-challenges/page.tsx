@@ -118,7 +118,7 @@ export default function ChallengesPage() {
         <div className="max-w-3xl mx-auto">
           <h2 className="font-heading text-4xl mb-4">{t('ctaTitle')}</h2>
           <p className="text-xl mb-8 opacity-90">{t('ctaSubtitle')}</p>
-          <Link href="/auth/signup">
+          <Link href="/sign-up">
             <Button variant="secondary" size="lg">{t('ctaButton')}</Button>
           </Link>
         </div>

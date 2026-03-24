@@ -38,7 +38,7 @@ export default function HomePage() {
             {t('hero.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/auth/signup">
+            <Link href="/sign-up">
               <Button size="lg">{t('hero.cta')}</Button>
             </Link>
             <Link href="#how-it-works">
@@ -126,7 +126,7 @@ export default function HomePage() {
         <div className="max-w-3xl mx-auto">
           <h2 className="font-heading text-4xl mb-4">{t('cta.title')}</h2>
           <p className="text-xl mb-8 opacity-90">{t('cta.subtitle')}</p>
-          <Link href="/auth/signup">
+          <Link href="/sign-up">
             <Button variant="secondary" size="lg">{t('cta.button')}</Button>
           </Link>
         </div>

@@ -39,10 +39,10 @@ export function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
-          <Link href="/auth/signin">
+          <Link href="/sign-in">
             <Button variant="ghost" size="sm">{t('signIn')}</Button>
           </Link>
-          <Link href="/auth/signup">
+          <Link href="/sign-up">
             <Button size="sm">{t('signUp')}</Button>
           </Link>
         </div>
@@ -77,10 +77,10 @@ export function Header() {
             </Link>
           ))}
           <div className="flex gap-3 pt-2">
-            <Link href="/auth/signin" className="flex-1">
+            <Link href="/sign-in" className="flex-1">
               <Button variant="outline" size="sm" className="w-full">{t('signIn')}</Button>
             </Link>
-            <Link href="/auth/signup" className="flex-1">
+            <Link href="/sign-up" className="flex-1">
               <Button size="sm" className="w-full">{t('signUp')}</Button>
             </Link>
           </div>

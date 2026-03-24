@@ -141,7 +141,7 @@ export default function FeatureDetailPage({ params }: { params: { slug: string }
         <div className="max-w-3xl mx-auto">
           <h2 className="font-heading text-4xl mb-4">{tDetail('ctaTitle')}</h2>
           <p className="text-xl mb-8 opacity-90">{tDetail('ctaSubtitle')}</p>
-          <Link href="/auth/signup">
+          <Link href="/sign-up">
             <Button variant="secondary" size="lg">{tDetail('ctaButton')}</Button>
           </Link>
         </div>

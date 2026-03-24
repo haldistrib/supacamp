@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Base — warm paper tones (subtle, not heavy) */
+  /* Base — warm paper tones */
   --color-paper-cream: #FFFAF5;
   --color-paper-warm: #FFF5EC;
   --color-paper-ruled: #E8DDD3;
@@ -55,8 +55,9 @@
   --font-body: 'Nunito', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
-  /* Shadows — warm-tinted but subtle */
+  /* Shadows */
   --shadow-paper: 0 2px 8px rgba(45, 42, 36, 0.08);
+  --shadow-collage: 4px 6px 16px rgba(45, 42, 36, 0.15);
 }
 
 /* Base styles */
@@ -67,13 +68,19 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Paper texture — very subtle grain */
+/* Paper texture — subtle grain */
 .paper-texture {
   background-image:
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.02'/%3E%3C/svg%3E");
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.025'/%3E%3C/svg%3E");
 }
 
-/* Notebook ruled lines — light */
+/* Grid dots pattern (like Studio Tom) */
+.dots-pattern {
+  background-image: radial-gradient(circle, var(--color-ink-300) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Notebook ruled lines */
 .notebook-lines {
   background-image: repeating-linear-gradient(
     transparent,
@@ -84,13 +91,75 @@ body {
   background-position: 0 8px;
 }
 
-/* Hand-drawn border — lighter version */
+/* Collage image styles */
+.collage-img {
+  box-shadow: var(--shadow-collage);
+}
+.collage-img-1 {
+  transform: rotate(-3deg);
+}
+.collage-img-2 {
+  transform: rotate(2deg);
+}
+.collage-img-3 {
+  transform: rotate(-1.5deg);
+}
+
+/* Torn paper edge (top) */
+.torn-edge-top {
+  position: relative;
+}
+.torn-edge-top::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: linear-gradient(135deg, var(--color-paper-cream) 33%, transparent 33%) -8px 0,
+    linear-gradient(225deg, var(--color-paper-cream) 33%, transparent 33%) -8px 0;
+  background-size: 16px 12px;
+}
+
+/* Torn paper edge (bottom) */
+.torn-edge-bottom {
+  position: relative;
+}
+.torn-edge-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: linear-gradient(315deg, var(--color-paper-cream) 33%, transparent 33%) 0 0,
+    linear-gradient(45deg, var(--color-paper-cream) 33%, transparent 33%) 0 0;
+  background-size: 16px 12px;
+}
+
+/* Hand-drawn border */
 .hand-drawn-border {
   border: 1.5px solid var(--color-ink-300);
   border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
 }
 
-/* Sticker badge effect */
+/* Washi tape */
+.washi-tape {
+  position: relative;
+}
+.washi-tape::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 80px;
+  height: 24px;
+  background-color: var(--color-secondary-200);
+  opacity: 0.7;
+}
+
+/* Sticker */
 .sticker {
   filter: drop-shadow(2px 3px 2px rgba(45, 42, 36, 0.15));
   transform: rotate(-2deg);
@@ -114,10 +183,19 @@ body {
   padding: 0 4px;
 }
 
+/* Scribble underline */
+.scribble-underline {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--color-primary-400);
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .sticker,
-  .sticker:hover {
+  .sticker, .sticker:hover,
+  .collage-img-1, .collage-img-2, .collage-img-3 {
     transform: none;
     transition: none;
   }

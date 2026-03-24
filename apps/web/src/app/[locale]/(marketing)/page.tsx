@@ -100,7 +100,7 @@ export default function HomePage() {
             {(['aiVideo', 'teams', 'challenges', 'leaderboard', 'safety', 'rewards'] as const).map((feature) => (
               <Link
                 key={feature}
-                href={`/features/${t(`features.${feature}.slug`)}`}
+                href={{ pathname: '/features/[slug]', params: { slug: t(`features.${feature}.slug`) } }}
                 className="bg-white rounded-xl p-6 hover:shadow-md transition-all border border-gray-200 hover:border-gray-300 group"
               >
                 <h3 className="text-base font-semibold mb-2 group-hover:text-primary-500 transition-colors">{t(`features.${feature}.title`)}</h3>

@@ -15,10 +15,10 @@ export function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-ink-900 mb-3">{t('features')}</h4>
             <ul className="space-y-2.5 text-sm text-ink-500">
-              <li><Link href="/features/ai-video-transformation" className="hover:text-ink-900 transition-colors">AI Video</Link></li>
-              <li><Link href="/features/create-your-team" className="hover:text-ink-900 transition-colors">Teams</Link></li>
-              <li><Link href="/features/challenges" className="hover:text-ink-900 transition-colors">Challenges</Link></li>
-              <li><Link href="/features/leaderboard" className="hover:text-ink-900 transition-colors">Leaderboard</Link></li>
+              <li><Link href={{ pathname: '/features/[slug]', params: { slug: 'ai-video-transformation' } }} className="hover:text-ink-900 transition-colors">AI Video</Link></li>
+              <li><Link href={{ pathname: '/features/[slug]', params: { slug: 'create-your-team' } }} className="hover:text-ink-900 transition-colors">Teams</Link></li>
+              <li><Link href={{ pathname: '/features/[slug]', params: { slug: 'challenges' } }} className="hover:text-ink-900 transition-colors">Challenges</Link></li>
+              <li><Link href={{ pathname: '/features/[slug]', params: { slug: 'leaderboard' } }} className="hover:text-ink-900 transition-colors">Leaderboard</Link></li>
             </ul>
           </div>
           <div>

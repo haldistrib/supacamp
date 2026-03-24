@@ -7,6 +7,7 @@ import { faqJsonLd } from '@/lib/seo/json-ld';
 import { Button } from '@/components/ui';
 import { Link } from '@/lib/i18n/navigation';
 import type { Locale } from '@/lib/i18n/config';
+import { locales } from '@/lib/i18n/config';
 import { notFound } from 'next/navigation';
 
 const FEATURE_KEYS = [
@@ -23,7 +24,8 @@ const FEATURE_KEYS = [
 
 type FeatureKey = (typeof FEATURE_KEYS)[number];
 
-const SLUG_TO_KEY: Record<string, FeatureKey> = {
+// English slug → feature key (canonical mapping)
+const EN_SLUG_TO_KEY: Record<string, FeatureKey> = {
   'ai-video-transformation': 'aiVideo',
   'create-your-team': 'teams',
   'challenges': 'challenges',
@@ -35,13 +37,54 @@ const SLUG_TO_KEY: Record<string, FeatureKey> = {
   'rewards': 'rewards',
 };
 
-export function generateStaticParams() {
-  return Object.keys(SLUG_TO_KEY).map((slug) => ({ slug }));
+// Resolve a localized slug to its feature key by checking all locale message files
+async function resolveFeatureKey(slug: string, locale: string): Promise<FeatureKey | null> {
+  // First check English canonical slugs
+  if (EN_SLUG_TO_KEY[slug]) return EN_SLUG_TO_KEY[slug];
+
+  // Load the locale's messages to check translated slugs
+  try {
+    const t = await getTranslations({ locale, namespace: 'marketing.features' });
+    for (const key of FEATURE_KEYS) {
+      const localizedSlug = t(`${key}.slug`);
+      if (localizedSlug === slug) return key;
+    }
+  } catch {
+    // fallback
+  }
+
+  return null;
+}
+
+export async function generateStaticParams() {
+  const params: { locale: string; slug: string }[] = [];
+
+  for (const locale of locales) {
+    try {
+      const messages = (await import(`@/messages/${locale}.json`)).default;
+      const features = messages?.marketing?.features;
+      if (features) {
+        for (const key of FEATURE_KEYS) {
+          const slug = features[key]?.slug;
+          if (slug) {
+            params.push({ locale, slug });
+          }
+        }
+      }
+    } catch {
+      // If locale file fails, use English slugs
+      for (const slug of Object.keys(EN_SLUG_TO_KEY)) {
+        params.push({ locale, slug });
+      }
+    }
+  }
+
+  return params;
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale, slug } = await params;
-  const featureKey = SLUG_TO_KEY[slug];
+  const featureKey = await resolveFeatureKey(slug, locale);
   if (!featureKey) return {};
 
   const t = await getTranslations({ locale, namespace: 'marketing.features' });
@@ -57,19 +100,19 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 const STEPS = ['step1', 'step2', 'step3'] as const;
 const FAQ_ITEMS = ['q1', 'q2', 'q3'] as const;
 
-export default function FeatureDetailPage({ params }: { params: { slug: string } }) {
-  const slug = params.slug;
-  const featureKey = SLUG_TO_KEY[slug];
+export default async function FeatureDetailPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
+  const { locale, slug } = await params;
+  const featureKey = await resolveFeatureKey(slug, locale);
 
   if (!featureKey) {
     notFound();
   }
 
-  const tFeature = useTranslations('marketing.features');
-  const tDetail = useTranslations('marketing.featureDetail');
-  const tHowItWorks = useTranslations(`marketing.featureDetail.howItWorks.${featureKey}`);
-  const tFaq = useTranslations(`marketing.featureDetail.faq.${featureKey}`);
-  const tCommon = useTranslations('common');
+  const tFeature = await getTranslations({ locale, namespace: 'marketing.features' });
+  const tDetail = await getTranslations({ locale, namespace: 'marketing.featureDetail' });
+  const tHowItWorks = await getTranslations({ locale, namespace: `marketing.featureDetail.howItWorks.${featureKey}` });
+  const tFaq = await getTranslations({ locale, namespace: `marketing.featureDetail.faq.${featureKey}` });
+  const tCommon = await getTranslations({ locale, namespace: 'common' });
 
   const faqItems = FAQ_ITEMS.map((item) => ({
     question: tFaq(`${item}.question`),
@@ -80,7 +123,7 @@ export default function FeatureDetailPage({ params }: { params: { slug: string }
     <>
       <JsonLdScript data={faqJsonLd(faqItems)} />
       <Breadcrumbs
-        locale="en"
+        locale={locale}
         items={[
           { label: tCommon('home'), href: '/' },
           { label: tCommon('features'), href: '/features' },
@@ -89,29 +132,29 @@ export default function FeatureDetailPage({ params }: { params: { slug: string }
       />
 
       {/* Hero */}
-      <section className="py-20 px-4 text-center paper-texture">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="font-heading text-5xl md:text-7xl text-ink-900 mb-6">
+      <section className="py-24 px-4 text-center">
+        <div className="max-w-3xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-ink-900 mb-6 leading-[1.1]">
             {tFeature(`${featureKey}.title`)}
           </h1>
-          <p className="text-xl text-ink-700 max-w-2xl mx-auto">
+          <p className="text-lg text-ink-500 max-w-2xl mx-auto leading-relaxed">
             {tFeature(`${featureKey}.description`)}
           </p>
         </div>
       </section>
 
       {/* How It Works */}
-      <section className="py-20 px-4">
+      <section className="py-24 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-heading text-4xl text-center mb-16">{tDetail('howItWorksTitle')}</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-center mb-16">{tDetail('howItWorksTitle')}</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {STEPS.map((step, index) => (
-              <div key={step} className="bg-white rounded-xl shadow-paper p-8 text-center hand-drawn-border">
-                <div className="w-16 h-16 rounded-full bg-primary-100 text-primary-500 flex items-center justify-center mx-auto mb-4 font-heading text-2xl">
+              <div key={step} className="relative p-8 rounded-2xl bg-white border border-gray-200">
+                <div className="w-10 h-10 rounded-full bg-ink-900 text-white flex items-center justify-center mb-5 text-sm font-bold">
                   {index + 1}
                 </div>
-                <h3 className="font-heading text-xl mb-3">{tHowItWorks(`${step}.title`)}</h3>
-                <p className="text-ink-700">{tHowItWorks(`${step}.description`)}</p>
+                <h3 className="text-lg font-semibold mb-2">{tHowItWorks(`${step}.title`)}</h3>
+                <p className="text-ink-500 leading-relaxed">{tHowItWorks(`${step}.description`)}</p>
               </div>
             ))}
           </div>
@@ -119,17 +162,19 @@ export default function FeatureDetailPage({ params }: { params: { slug: string }
       </section>
 
       {/* FAQ */}
-      <section className="py-20 px-4 bg-paper-warm paper-texture">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="font-heading text-4xl text-center mb-12">{tDetail('faqTitle')}</h2>
-          <div className="space-y-4">
+      <section className="py-24 px-4">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold tracking-tight text-center mb-12">{tDetail('faqTitle')}</h2>
+          <div className="space-y-3">
             {FAQ_ITEMS.map((item) => (
-              <details key={item} className="bg-white rounded-xl shadow-paper p-6 border border-ink-100 group">
-                <summary className="font-heading text-lg cursor-pointer list-none flex justify-between items-center">
+              <details key={item} className="group rounded-xl border border-gray-200 hover:border-gray-300 transition-colors">
+                <summary className="font-medium text-ink-900 cursor-pointer list-none flex justify-between items-center p-5">
                   {tFaq(`${item}.question`)}
-                  <span className="text-ink-300 group-open:rotate-180 transition-transform">&#9660;</span>
+                  <svg className="w-5 h-5 text-ink-300 group-open:rotate-180 transition-transform shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
+                  </svg>
                 </summary>
-                <p className="mt-4 text-ink-700">{tFaq(`${item}.answer`)}</p>
+                <p className="px-5 pb-5 text-ink-500 leading-relaxed">{tFaq(`${item}.answer`)}</p>
               </details>
             ))}
           </div>
@@ -137,10 +182,10 @@ export default function FeatureDetailPage({ params }: { params: { slug: string }
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4 bg-primary-500 text-white text-center torn-edge-top">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="font-heading text-4xl mb-4">{tDetail('ctaTitle')}</h2>
-          <p className="text-xl mb-8 opacity-90">{tDetail('ctaSubtitle')}</p>
+      <section className="py-24 px-4 bg-ink-900 text-white text-center">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold tracking-tight mb-4">{tDetail('ctaTitle')}</h2>
+          <p className="text-lg text-gray-400 mb-8">{tDetail('ctaSubtitle')}</p>
           <Link href="/sign-up">
             <Button variant="secondary" size="lg">{tDetail('ctaButton')}</Button>
           </Link>

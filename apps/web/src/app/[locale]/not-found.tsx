@@ -5,16 +5,16 @@ export default function LocaleNotFound() {
   const t = useTranslations('common');
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4">
+    <div className="min-h-screen flex items-center justify-center px-4 paper-texture">
       <div className="max-w-md mx-auto text-center">
-        <h1 className="text-7xl font-bold text-ink-900 mb-4">404</h1>
-        <h2 className="text-xl font-semibold mb-3">{t('notFound')}</h2>
+        <h1 className="font-heading text-8xl text-primary-500 mb-4">404</h1>
+        <h2 className="font-heading text-2xl mb-3 tracking-wide">{t('notFound')}</h2>
         <p className="text-ink-500 mb-8">
           {t('notFoundDescription')}
         </p>
         <Link
           href="/"
-          className="inline-block px-6 py-3 bg-ink-900 text-white rounded-lg text-sm font-medium hover:bg-ink-700 transition-colors"
+          className="inline-block px-6 py-3 bg-primary-500 text-white rounded-xl font-heading text-lg hover:bg-primary-600 transition-colors"
         >
           {t('backToHome')}
         </Link>

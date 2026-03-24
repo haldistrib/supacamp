@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Clean white/gray base */
-  --color-paper-cream: #FAFAFA;
-  --color-paper-warm: #F5F5F5;
-  --color-paper-ruled: #E5E5E5;
+  /* Base — warm paper tones (subtle, not heavy) */
+  --color-paper-cream: #FFFAF5;
+  --color-paper-warm: #FFF5EC;
+  --color-paper-ruled: #E8DDD3;
 
-  /* Primary — vibrant coral */
+  /* Primary — soft coral/rose */
   --color-primary-50: #FFF1F0;
   --color-primary-100: #FFE0DD;
   --color-primary-200: #FFC2BA;
@@ -15,7 +15,7 @@
   --color-primary-500: #F25C4E;
   --color-primary-600: #D94438;
 
-  /* Secondary — warm amber */
+  /* Secondary — warm golden yellow */
   --color-secondary-50: #FFFBEB;
   --color-secondary-100: #FFF3C4;
   --color-secondary-200: #FCE588;
@@ -23,76 +23,102 @@
   --color-secondary-400: #F7C948;
   --color-secondary-500: #E5A50A;
 
-  /* Tertiary — fresh green */
+  /* Tertiary — soft sage green */
   --color-tertiary-50: #F0FFF4;
   --color-tertiary-100: #C6F6D5;
   --color-tertiary-200: #9AE6B4;
   --color-tertiary-300: #68D391;
   --color-tertiary-400: #48BB78;
 
-  /* Accent — indigo/violet */
+  /* Accent — dusty lavender */
   --color-accent-50: #F5F3FF;
   --color-accent-100: #EDE9FE;
   --color-accent-200: #DDD6FE;
   --color-accent-300: #C4B5FD;
   --color-accent-400: #A78BFA;
 
-  /* Neutrals — cool grays */
-  --color-ink-900: #111827;
-  --color-ink-700: #374151;
-  --color-ink-500: #6B7280;
-  --color-ink-300: #9CA3AF;
-  --color-ink-100: #F3F4F6;
+  /* Neutrals — warm grays (ink) */
+  --color-ink-900: #2D2A24;
+  --color-ink-700: #4A4540;
+  --color-ink-500: #78716C;
+  --color-ink-300: #A8A29E;
+  --color-ink-100: #F0EDEA;
 
   /* Functional */
-  --color-danger: #EF4444;
-  --color-warning: #F59E0B;
-  --color-success: #10B981;
-  --color-info: #3B82F6;
+  --color-danger: #E53E3E;
+  --color-warning: #ED8936;
+  --color-success: #48BB78;
+  --color-info: #4299E1;
 
-  /* Fonts — modern sans-serif */
-  --font-heading: 'Inter', system-ui, sans-serif;
-  --font-body: 'Inter', system-ui, sans-serif;
+  /* Fonts */
+  --font-heading: 'AirStream_Bold', 'Comic Sans MS', cursive;
+  --font-body: 'Nunito', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
-  /* Shadows — clean */
-  --shadow-paper: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
+  /* Shadows — warm-tinted but subtle */
+  --shadow-paper: 0 2px 8px rgba(45, 42, 36, 0.08);
 }
 
 /* Base styles */
 body {
-  background-color: #ffffff;
+  background-color: var(--color-paper-cream);
   color: var(--color-ink-900);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Subtle grain texture — very light */
+/* Paper texture — very subtle grain */
 .paper-texture {
-  background-color: var(--color-paper-cream);
+  background-image:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.02'/%3E%3C/svg%3E");
 }
 
-/* Clean separator */
+/* Notebook ruled lines — light */
 .notebook-lines {
-  background: transparent;
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 31px,
+    var(--color-paper-ruled) 31px,
+    var(--color-paper-ruled) 32px
+  );
+  background-position: 0 8px;
 }
 
-/* Gradient border (top) */
-.torn-edge-top {
-  position: relative;
-}
-
-/* Hand-drawn border → clean rounded */
+/* Hand-drawn border — lighter version */
 .hand-drawn-border {
-  border: 1px solid var(--color-ink-100);
-  border-radius: 0.75rem;
+  border: 1.5px solid var(--color-ink-300);
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+
+/* Sticker badge effect */
+.sticker {
+  filter: drop-shadow(2px 3px 2px rgba(45, 42, 36, 0.15));
+  transform: rotate(-2deg);
+  transition: transform 0.2s ease;
+}
+.sticker:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+/* Crayon highlight */
+.crayon-highlight {
+  background: linear-gradient(
+    104deg,
+    rgba(255, 122, 107, 0) 0.9%,
+    rgba(255, 122, 107, 1.25) 2.4%,
+    rgba(255, 122, 107, 0.5) 5.8%,
+    rgba(255, 122, 107, 0.1) 93%,
+    rgba(255, 122, 107, 0.7) 96%,
+    rgba(255, 122, 107, 0) 98%
+  );
+  padding: 0 4px;
 }
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  * {
-    transition-duration: 0ms !important;
-    animation-duration: 0ms !important;
+  .sticker,
+  .sticker:hover {
+    transform: none;
+    transition: none;
   }
 }

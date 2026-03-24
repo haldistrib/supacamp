@@ -34,24 +34,24 @@ export function LocaleSwitcher() {
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-1.5 px-2.5 py-1.5 text-sm rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors"
+        className="flex items-center gap-1.5 px-2.5 py-1.5 text-sm rounded-lg border border-ink-100 hover:bg-paper-warm transition-colors"
         aria-label="Change language"
       >
         <span>{FLAG[locale]}</span>
-        <span className="hidden sm:inline text-gray-600">{localeConfig[locale].nativeName}</span>
-        <svg className={`w-3.5 h-3.5 text-gray-400 transition-transform ${open ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <span className="hidden sm:inline text-ink-500">{localeConfig[locale].nativeName}</span>
+        <svg className={`w-3.5 h-3.5 text-ink-300 transition-transform ${open ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
       </button>
 
       {open && (
-        <div className="absolute right-0 top-full mt-1 w-48 bg-white rounded-xl border border-gray-200 shadow-lg py-1 z-50 max-h-80 overflow-y-auto">
+        <div className="absolute right-0 top-full mt-1 w-48 bg-white rounded-xl border border-ink-100 shadow-paper py-1 z-50 max-h-80 overflow-y-auto">
           {locales.map((l) => (
             <button
               key={l}
               onClick={() => switchLocale(l)}
-              className={`w-full text-left px-3 py-2 text-sm flex items-center gap-2.5 hover:bg-gray-50 transition-colors ${
-                l === locale ? 'bg-gray-50 font-medium' : 'text-gray-700'
+              className={`w-full text-left px-3 py-2 text-sm flex items-center gap-2.5 hover:bg-paper-warm transition-colors ${
+                l === locale ? 'bg-paper-warm font-medium' : 'text-ink-700'
               }`}
             >
               <span>{FLAG[l]}</span>

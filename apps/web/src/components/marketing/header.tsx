@@ -12,16 +12,16 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { label: t('features'), href: '/features' },
-    { label: t('blog'), href: '/blog' },
-    { label: t('about'), href: '/about' },
-    { label: t('contact'), href: '/contact' },
+    { label: t('features'), href: '/features' as const },
+    { label: t('blog'), href: '/blog' as const },
+    { label: t('about'), href: '/about' as const },
+    { label: t('contact'), href: '/contact' as const },
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-100">
+    <header className="sticky top-0 z-50 bg-paper-cream/90 backdrop-blur-md border-b border-ink-100/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold tracking-tight text-ink-900 hover:text-primary-500 transition-colors">
+        <Link href="/" className="font-heading text-2xl text-primary-500 hover:text-primary-600 transition-colors tracking-wide">
           Supacamp
         </Link>
 
@@ -31,9 +31,9 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className={`text-sm font-medium transition-colors hover:text-ink-900 ${
+              className={`text-sm font-semibold transition-colors hover:text-primary-500 ${
                 pathname === item.href || pathname.startsWith(item.href + '/')
-                  ? 'text-ink-900'
+                  ? 'text-primary-500'
                   : 'text-ink-500'
               }`}
             >
@@ -52,7 +52,7 @@ export function Header() {
           </Link>
         </div>
 
-        {/* Mobile menu button */}
+        {/* Mobile */}
         <div className="flex md:hidden items-center gap-2">
           <LocaleSwitcher />
           <button
@@ -62,9 +62,9 @@ export function Header() {
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {mobileMenuOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               )}
             </svg>
           </button>
@@ -73,18 +73,18 @@ export function Header() {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-gray-100 bg-white px-4 py-4 space-y-1">
+        <div className="md:hidden border-t border-ink-100 bg-paper-cream px-4 py-4 space-y-1">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="block text-ink-700 text-sm font-medium py-2.5 px-3 rounded-lg hover:bg-gray-50 transition-colors"
+              className="block text-ink-700 text-sm font-semibold py-2.5 px-3 rounded-xl hover:bg-paper-warm transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               {item.label}
             </Link>
           ))}
-          <div className="flex gap-3 pt-3 border-t border-gray-100 mt-2">
+          <div className="flex gap-3 pt-3 border-t border-ink-100 mt-2">
             <Link href="/sign-in" className="flex-1">
               <Button variant="outline" size="sm" className="w-full">{t('signIn')}</Button>
             </Link>
